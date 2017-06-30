@@ -13,6 +13,7 @@
 
     <?= $this->Html->script('jquery-2.1.4.js') ?>
     <?= $this->Html->script('materialize.min.js') ?>
+    <?= $this->Html->script('mlc-stays-scripts.js') ?>
 
     <link href="https://fonts.googleapis.com/css?family=Raleway:500i|Roboto:300,400,700|Roboto+Mono" rel="stylesheet">
 </head>
