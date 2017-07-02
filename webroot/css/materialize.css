@@ -2108,6 +2108,7 @@
 }
 
 .grey.darken-4 {
+  opacity: 50px;
   background-color: #212121 !important;
 }
 
@@ -4247,6 +4248,8 @@ nav .brand-logo {
   font-size: 2.1rem;
   padding: 0;
   white-space: nowrap;
+  height: 70px;
+  margin-left: 30px;
 }
 
 nav .brand-logo.center {
@@ -4371,7 +4374,7 @@ nav .input-field label.active i {
 }
 
 .navbar-fixed {
-  position: relative;
+  position: fixed;
   height: 56px;
   z-index: 997;
 }
@@ -4723,7 +4726,8 @@ small {
 }
 
 .card.small {
-  height: 300px;
+  height: 400px;
+  width: 400px;
 }
 
 .card.medium {
