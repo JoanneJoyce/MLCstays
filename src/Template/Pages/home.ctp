@@ -21,7 +21,7 @@
 
     <nav>
         <div class="nav-wrapper">
-            <a href="#" class="brand-logo">Logo</a>
+            <a href="#"><?= $this->Html->image('mlclogo.png') ?></a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
                 <li><a href="#">Login</a></li>
                 <li><a href="#">Sign Up</a></li>
@@ -40,21 +40,21 @@
         </div>
       </li>
       <li>
-         <?= $this->Html->image('me1.JPG') ?>  <!-- random image -->
+         <?= $this->Html->image('pic2.png') ?>  <!-- random image -->
       <div class="caption left-align">
           <h3>Left Aligned Caption</h3>
           <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
         </div>
       </li>
       <li>
-         <?= $this->Html->image('me1.JPG') ?>  <!-- random image -->
+         <?= $this->Html->image('pic3.jpg') ?>  <!-- random image -->
         <div class="caption right-align">
           <h3>Right Aligned Caption</h3>
           <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
         </div>
       </li>
       <li>
-         <?= $this->Html->image('me1.JPG') ?>  <!-- random image -->
+         <?= $this->Html->image('pic4.jpg') ?>  <!-- random image -->
         <div class="caption center-align">
           <h3>This is our big Tagline!</h3>
           <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
@@ -62,18 +62,9 @@
       </li> 
     </ul>
   </div>
+
+  <div>
+
+  </div>
 </body>
 </html>
-
-<script>
-    $(document).ready(function(){
-        // Pause slider
-        $('.slider').slider('pause');
-        // Start slider
-        $('.slider').slider('start');
-        // Next slide
-        $('.slider').slider('next');
-        // Previous slide
-        $('.slider').slider('prev');
-    });
-</script>
