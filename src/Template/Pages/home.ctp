@@ -10,25 +10,36 @@
     <title> MLCStays</title>
 
     <?= $this->Html->css('materialize.css') ?>
+    <?= $this->Html->css('mlcstays.css') ?>
+    <?= $this->Html->css('material-icons.css') ?>
 
     <?= $this->Html->script('jquery-2.1.4.js') ?>
     <?= $this->Html->script('materialize.js') ?>
     <?= $this->Html->script('mlc-stays-scripts.js') ?>
 
-    <link href="https://fonts.googleapis.com/css?family=Raleway:500i|Roboto:300,400,700|Roboto+Mono" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body class="home">
 
   <div class="navbar-fixed">
     <nav class = "transparent">
+       <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
     <a href="#">
-             <?= $this->Html->image('stays-white-01.png', ['class'=>'brand-logo'])?>
+             <?= $this->Html->image('mlclogo.png', ['class'=>'brand-logo'])?>
     </a> 
-        <ul id="nav-mobile" class="right show-on-medium-and-up">
-            <li><a href="#">Units</a></li>
-            <li><a href="#">Login</a></li>
-            <li><a href="#">Sign Up</a></li>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="#" class = "units">Units</a></li>
+            <li><a href="#" class = "services">Services</a></li>
+            <li><a href="#" class = "contact">ContactUs</a></li>
+            <li><a href="#" class = "login">Login</a></li>
+            <li class = "login">|</li>
+            <li><a href="#" class = "login">Sign Up</a></li>
+        </ul>
+        <ul class="side-nav" id="mobile-demo">
+           <li><a href="#" class = "units">Units</a></li>
+            <li><a href="#" class = "services">Services</a></li>
+            <li><a href="#" class = "contact">Contact Us</a></li>
+            <li><a href="#" class = "login">Login</a></li>
+            <li><a href="#" class = "login">Sign Up</a></li>
         </ul>
     </nav>
   </div>

@@ -1,10 +1,19 @@
 $(document).ready(function(){
   $('.slider').slider();
   $('.materialboxed').materialbox();
+  $(".button-collapse").sideNav();
 });
 
-$(document).on('scroll', function (e) { 
-	updateColor(); 
+
+	$(document).on('scroll', function (e) {
+    e.preventDefault();
+    var o = $(document).scrollTop() / 500;
+    if (o > 1.000) { o = 1;
+    var e = $('nav');
+    $('nav').css('opacity', o);}
+    else {
+          $('.nav').css('background-color', 'transparent');
+       }
 });
 
 function updateColor() {
@@ -17,4 +26,3 @@ function updateColor() {
     e.attr('style', 'background-color: ' + newColor + ' !important');
 }
 
-updateColor();
