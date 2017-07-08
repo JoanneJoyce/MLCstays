@@ -20,7 +20,7 @@
 </head>
 <body class="home">
 
-  <div class="navbar-fixed">
+  <div class="navbar-fixed" id="navbar">
     <nav class = "transparent">
        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
     <a href="#">
@@ -48,7 +48,7 @@
 <div class="slider">
     <ul class="slides">
       <li>
-       <?= $this->Html->image('me1.JPG') ?> <!-- random image -->
+       <?= $this->Html->image('IMG_3204.JPG') ?> <!-- random image -->
         <div class="caption center-align">
           <h3>This is our big Tagline!</h3>
           <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
@@ -114,7 +114,7 @@
           <?= $this->Html->image('pic2.png', ['class'=>'brand-logo']) ?>
         </div>
         <div class="card-content">
-          <span class="card-title activator grey-text text-darken-4">LANDLORDS<i class="material-icons right">more_vert</i></span>
+          <span class="card-title activator grey-text text-darken-4">INVESTORS<i class="material-icons right">more_vert</i></span>
           <p><a href="#">This is a link</a></p>
         </div>
         <div class="card-reveal">
@@ -122,8 +122,33 @@
           <p>Here is some more information about this product that is only revealed once clicked on.</p>
         </div>
       </div>
-
     </div>
   </div>
+
+  <footer class="page-footer">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">Footer Content</h5>
+                <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Links</h5>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            © 2017 MLCStays Text
+            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+            </div>
+          </div>
+        </footer>
 </body>
 </html>
