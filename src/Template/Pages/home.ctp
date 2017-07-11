@@ -22,7 +22,7 @@
 
   <div class="navbar-fixed" id="navbar">
     <nav class = "transparent">
-       <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+       <a href="#" data-activates="mobile-demo" class="button-collapse "><i class="material-icons">menu</i></a>
     <a href="#">
              <?= $this->Html->image('mlclogo.png', ['class'=>'brand-logo'])?>
     </a> 
@@ -80,49 +80,31 @@
   
   <div>
     <h4><center> ABOUT US </center></h4>
-    <div class="row">
-      <div class="col l4 card small">
-        <div class="card-image waves-effect waves-block waves-light">
-          <?= $this->Html->image('pic2.png', ['class'=>'brand-logo']) ?>
+    <p><center>SOME TEXT HERE ABOUT OUR COMPANY</center></p>
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="home-sec1-about-img">
+            <?= $this->Html->image('guest.png', ['class'=>'guestImg img-responsiv'])?>
+          </div>
+          <h3>GUESTS</h3>
+          <p>IMAGE HERE</p>
         </div>
-        <div class="card-content">
-          <span class="card-title activator grey-text text-darken-4">GUESTS<i class="material-icons right">more_vert</i></span>
-          <p><a href="#">This is a link</a></p>
+         <div class="col-sm-4">
+          <div class="home-sec1-about-img">
+            <?= $this->Html->image('guest.png', ['class'=>'guestImg'])?>
+          </div>
+          <h3>MLCSTAYS</h3>
+          <p>IMAGE HERE</p>
         </div>
-        <div class="card-reveal">
-          <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-          <p>Here is some more information about this product that is only revealed once clicked on.</p>
-        </div>
-      </div>
-
-      <div class="col l4 card small">
-        <div class="card-image waves-effect waves-block waves-light">
-          <?= $this->Html->image('pic2.png', ['class'=>'brand-logo']) ?>
-        </div>
-        <div class="card-content">
-          <span class="card-title activator grey-text text-darken-4">MLCSTAYS<i class="material-icons right">more_vert</i></span>
-          <p><a href="#">This is a link</a></p>
-        </div>
-        <div class="card-reveal">
-          <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-          <p>Here is some more information about this product that is only revealed once clicked on.</p>
+         <div class="col-sm-4">
+          <div class="home-sec1-about-img">
+            <?= $this->Html->image('guest.png', ['class'=>'guestImg'])?>
+          </div>
+          <h3>INVESTORS</h3>
+          <p>IMAGE HERE</p>
         </div>
       </div>
 
-      <div class="col l4 card small">
-        <div class="card-image waves-effect waves-block waves-light">
-          <?= $this->Html->image('pic2.png', ['class'=>'brand-logo']) ?>
-        </div>
-        <div class="card-content">
-          <span class="card-title activator grey-text text-darken-4">INVESTORS<i class="material-icons right">more_vert</i></span>
-          <p><a href="#">This is a link</a></p>
-        </div>
-        <div class="card-reveal">
-          <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-          <p>Here is some more information about this product that is only revealed once clicked on.</p>
-        </div>
-      </div>
-    </div>
   </div>
 
   <footer class="page-footer">
@@ -145,6 +127,19 @@
           </div>
           <div class="footer-copyright">
             <div class="container">
+            <p>Connect with us: </p>
+            <ul class="footer-social-links list-unstyled list-inline">
+              <li>
+                <a href="#">
+                  <?= $this->Html->image('facebook.png', ['class' => 'facebook']) ?>
+                </a>
+              </li>
+              <li href="#">
+                <a>
+                  <?= $this->Html->image('instagram.png', ['class' => 'facebook']) ?>
+                </a>
+              </li>
+            </ul>
             © 2017 MLCStays Text
             <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
             </div>
