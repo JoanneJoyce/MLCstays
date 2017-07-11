@@ -57,13 +57,6 @@ class AppController extends Controller
             'loginAction' => ['controller' => 'Users', 'action' => 'login'],
             'unauthorizedRedirect' => $this->referer()
         ]);
-
-        /*
-         * Enable the following components for recommended CakePHP security settings.
-         * see http://book.cakephp.org/3.0/en/controllers/components/security.html
-         */
-        //$this->loadComponent('Security');
-        //$this->loadComponent('Csrf');
     }
 
     /**
@@ -79,5 +72,19 @@ class AppController extends Controller
         ) {
             $this->set('_serialize', true);
         }
+    }
+
+
+    public function beforeFilter(Event $event)
+    {
+
+        $this->Auth->allow();
+        // if($this->request->params['_ext'] === 'json')
+        // {
+        //     $this->Auth->config('authenticate', ['Basic' => ['userModel' => 'Users']]);
+        //     $this->Auth->config('storage', 'Session');
+        //     $this->Auth->config('unauthorizedRedirect', false);
+        // }
+        return parent::beforeFilter($event);
     }
 }

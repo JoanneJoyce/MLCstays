@@ -145,5 +145,6 @@
             </div>
           </div>
         </footer>
+        <?php echo $this->element('login_modal'); ?>
 </body>
 </html>
