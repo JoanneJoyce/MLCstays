@@ -5,40 +5,39 @@ $(document).ready(function(){
 
 var didScroll;
 var lastScrollTop = 0;
-var delta = 5;
 var navbarHeight = $('#navbar').outerHeight();
 
 $(window).scroll(function(event){
-    didScroll = true;
-});
-
-setInterval(function() {
-    if (didScroll) {
-        hasScrolled();
-        didScroll = false;
-    }
-}, 250);
-
-function hasScrolled() {
     var st = $(this).scrollTop();
     
-    // Make sure they scroll more than delta
-    if(Math.abs(lastScrollTop - st) <= delta)
-        return;
     
     // If they scrolled down and are past the navbar, add class .MagicMenu-up.
     // This is necessary so you never see what is "behind" the navbar.
-    if (st > lastScrollTop && st > navbarHeight){
+
+    if (lastScrollTop < st){
         // Scroll Down
         $('#navbar').fadeOut(500);
     } else {
         // Scroll Up
         if(st + $(window).height() < $(document).height()) {
+            if (st > navbarHeight) {
+                $('#navbar nav').removeClass('transparent');
+            }
+
+            if(st == 0) {
+                $('#navbar nav').slideUp(200, function(){
+                    $('#navbar nav').addClass('transparent');
+                });
+                $('#navbar nav').slideDown(200);
+            }
             $('#navbar').fadeIn(500);
+            $('#navbar nav').css({
+                'background-color': '#1b2030',
+            });
         }
+
     }
-    
     lastScrollTop = st;
-}
+});
 
 });
