@@ -44,9 +44,8 @@
     </nav>
   </div>
 
-
-<div class="slider">
-    <ul class="slides">
+<div class="slider container-fluid">
+    <ul class="slides container-fluid">
       <li>
        <?= $this->Html->image('IMG_3204.JPG') ?> <!-- random image -->
         <div class="caption center-align">
@@ -84,21 +83,21 @@
       <div class="row">
         <div class="col-sm-4">
           <div class="home-sec1-about-img">
-            <?= $this->Html->image('guest.png', ['class'=>'guestImg img-responsiv'])?>
+            <?= $this->Html->image('guest.png', ['class'=>'guestImg'])?>
           </div>
           <h3>GUESTS</h3>
           <p>IMAGE HERE</p>
         </div>
          <div class="col-sm-4">
           <div class="home-sec1-about-img">
-            <?= $this->Html->image('guest.png', ['class'=>'guestImg'])?>
+            <?= $this->Html->image('building.jpg', ['class'=>'guestImg'])?>
           </div>
           <h3>MLCSTAYS</h3>
           <p>IMAGE HERE</p>
         </div>
-         <div class="col-sm-4">
+         <div class="col-sm-4 ">
           <div class="home-sec1-about-img">
-            <?= $this->Html->image('guest.png', ['class'=>'guestImg'])?>
+            <?= $this->Html->image('investors.png', ['class'=>'guestImg'])?>
           </div>
           <h3>INVESTORS</h3>
           <p>IMAGE HERE</p>
@@ -140,7 +139,7 @@
                 </a>
               </li>
             </ul>
-            © 2017 MLCStays Text
+            © 2017 MLCStays
             <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
             </div>
           </div>
