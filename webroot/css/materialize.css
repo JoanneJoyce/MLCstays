@@ -3,6 +3,7 @@
  * Copyright 2014-2015 Materialize
  * MIT License (https://raw.githubusercontent.com/Dogfalo/materialize/master/LICENSE)
  */
+
 .materialize-red {
   background-color: #e51c23 !important;
 }
@@ -2865,6 +2866,7 @@ ul.staggered-list li {
 .page-footer {
   padding-top: 20px;
   background-color: #1b2030;
+  border-radius: 8px; 
 }
 
 .page-footer .footer-copyright {
@@ -5101,7 +5103,7 @@ small {
 .btn, .btn-large,
 .btn-flat {
   border: none;
-  border-radius: 2px;
+  border-radius: 8px;
   display: inline-block;
   height: 36px;
   line-height: 36px;
@@ -5455,7 +5457,7 @@ button.btn-floating {
   width: 24px;
 }
 
-.input-field.col .dropdown-content [type="checkbox"] + label {
+.input-field.col .dropdown-content [type="checkbox"] + rol {
   top: 1px;
   left: 0;
   height: 18px;
@@ -5588,13 +5590,13 @@ button.btn-floating {
   position: fixed;
   left: 0;
   right: 0;
-  background-color: #fafafa;
+  background-color:  #F5F5F5; /* #F5F5F5CHANGE HERE FOR BETTER IMAGE VIEWING (CAROUSEL)*/
   padding: 0;
-  max-height: 70%;
+  max-height: auto;/* ni set ko sa auto ito orig(70%)*/
   width: 55%;
   margin: auto;
   overflow-y: auto;
-  border-radius: 2px;
+  border-radius: 50px;
   will-change: top, opacity;
 }
 
@@ -5610,29 +5612,29 @@ button.btn-floating {
 
 .modal .modal-content {
   padding: 24px;
-}
+ }
 
 .modal .modal-close {
   cursor: pointer;
 }
 
 .modal .modal-footer {
-  border-radius: 0 0 2px 2px;
-  background-color: #fafafa;
+  border-radius: 8px;
+  background-color: #1b2030; /*#fafafa*/
   padding: 4px 6px;
   height: 56px;
   width: 100%;
 }
 
 .modal .modal-footer .btn, .modal .modal-footer .btn-large, .modal .modal-footer .btn-flat {
-  float: right;
+
   margin: 6px 0;
 }
 
 .modal-overlay {
   position: fixed;
   z-index: 999;
-  top: -100px;
+  top: -25%;
   left: 0;
   bottom: 0;
   right: 0;
@@ -5857,6 +5859,7 @@ button.btn-floating {
   cursor: -webkit-zoom-in;
   cursor: zoom-in;
   position: relative;
+  -webkit-transition: opacity .4s;
   transition: opacity .4s;
   -webkit-backface-visibility: hidden;
 }
@@ -5891,16 +5894,17 @@ button.btn-floating {
   width: 100%;
   text-align: center;
   padding: 0% 15%;
-  height: 50px;
+  height: 10px;
   z-index: 1000;
   -webkit-font-smoothing: antialiased;
 }
 
 select:focus {
-  outline: 1px solid #c9f3ef;
+  outline: 1px solid #c9f3ef; /*#c9f3ef */
 }
 
 button:focus {
+  border-radius: 50px;   /*for fun haha remove this*/ 
   outline: none;
   background-color: #2ab7a9;
 }
@@ -8016,7 +8020,7 @@ input[type=range]:focus::-ms-fill-upper {
 }
 
 .carousel .carousel-item > img {
-  width: 100%;
+  width: 200%;
 }
 
 .carousel .indicators {

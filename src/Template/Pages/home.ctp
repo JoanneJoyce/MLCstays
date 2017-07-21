@@ -139,8 +139,9 @@ $this->layout = false;
           <?= $this->Html->image('fb-logo.png', ['class' => 'facebook']) ?>
           </a>
         </li>
-        <li href="#">
-          <a>
+		<li>
+        <a href="#">
+          
             <?= $this->Html->image('instagram-logo.png', ['class' => 'facebook']) ?>
           </a>
         </li>

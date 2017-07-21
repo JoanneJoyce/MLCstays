@@ -1,3 +1,93 @@
+.bgimg {
+  border-radius: 20px; 
+  height: 20%;
+  width: 1900px;
+  display: inline-block;
+  vertical-align: top;
+  z-index: -1;
+  background-position: center;
+  background-size:100% auto;
+  
+}
+
+.topleft {
+    position: absolute;
+    top: 0;
+    left: 16px;
+}
+
+.bottomleft {
+    position: absolute;
+    bottom: 0;
+    left: 16px;
+}
+
+.middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.mcenter {
+  position: absolute;
+  text-align: center;
+  z-index: 999;
+
+}
+
+hr  {
+    margin: auto;
+    width: 40%;
+}
+
+.imagelock{
+  border-radius: 8px;
+  width: 100%;
+  height: 10%;
+   position: fixed; 
+    left: 0px; 
+    top: 0px; 
+    z-index: -1;
+}
+
+
+.form-field {
+    background: #c09b9b;
+    border: .09167rem solid #dadada;
+    border-radius: .33333rem;
+    padding: .79167rem .83333rem;
+    color: #999;
+    font-size: 1.08333rem;
+}
+.u-isSelectable {
+    cursor: text;
+}
+.u-posRelative {
+    position: relative!important;
+}
+
+
+
+
+
+.products1{
+  border-radius: 20px;
+  
+}
+.price {
+  font-family: serif;
+  font-size: 100px
+  font-weight: bold;
+
+}
+.products {
+      height: 80%;
+      width: 300px;
+      display: inline-block;
+      vertical-align: top;
+      border-radius: 8px;
+}
 .units, .services, .contact, .login{	
 	font-size: 20px;
 	color: #fff;
@@ -154,3 +244,87 @@ nav .brand-logo {
     height: 100vh !important;
   }
 }
+
+.checkbox2 {
+  width: 20px;
+  position: relative;
+  margin: 20px auto;
+  label {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(top, #222 0%, #45484d 100%);
+    border-radius: 4px;
+    box-shadow: inset 0px 1px 1px rgba(0,0,0,0.5), 0px 1px 0px rgba(255,255,255,.4);
+    &:after {
+      content: '';
+      width: 9px;
+      height: 5px;
+      position: absolute;
+      top: 4px;
+      left: 4px;
+      border: 3px solid #fcfff4;
+      border-top: none;
+      border-right: none;
+      background: transparent;
+      opacity: 0;
+      transform: rotate(-45deg);
+    }
+    &:hover::after {
+      opacity: 0.3;
+    }
+  }
+  input[type=checkbox] {
+    visibility: hidden;
+    &:checked + label:after {
+      opacity: 1;
+    }    
+  }
+}
+
+
+.modal.left .modal-dialog,
+  .modal.right .modal-dialog {
+    position: fixed;
+    margin: auto;
+    width: 320px;
+    height: 100%;
+    -webkit-transform: translate3d(0%, 0, 0);
+        -ms-transform: translate3d(0%, 0, 0);
+         -o-transform: translate3d(0%, 0, 0);
+            transform: translate3d(0%, 0, 0);
+  } 
+  .modal.left .modal-body,
+  .modal.right .modal-body {
+    padding: 15px 15px 80px;
+  }
+
+/*Left*/
+  .modal.left.fade .modal-dialog{
+    left: -320px;
+    -webkit-transition: opacity 0.3s linear, left 0.3s ease-out;
+       -moz-transition: opacity 0.3s linear, left 0.3s ease-out;
+         -o-transition: opacity 0.3s linear, left 0.3s ease-out;
+            transition: opacity 0.3s linear, left 0.3s ease-out;
+  }
+  
+  .modal.left.fade.in .modal-dialog{
+    left: 0;
+  }
+        
+/*Right*/
+  .modal.right.fade .modal-dialog {
+    right: -320px;
+    -webkit-transition: opacity 0.3s linear, right 0.3s ease-out;
+       -moz-transition: opacity 0.3s linear, right 0.3s ease-out;
+         -o-transition: opacity 0.3s linear, right 0.3s ease-out;
+            transition: opacity 0.3s linear, right 0.3s ease-out;
+  }
+  
+  .modal.right.fade.in .modal-dialog {
+    right: 0;
+  }
+
