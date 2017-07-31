@@ -66,6 +66,9 @@ hr  {
 .u-posRelative {
     position: relative!important;
 }
+.r1{
+  padding: 0 0%;
+}
 
 
 
@@ -73,6 +76,7 @@ hr  {
 
 .products1{
   border-radius: 20px;
+  cursor: pointer;
   
 }
 .price {
@@ -88,6 +92,7 @@ hr  {
       vertical-align: top;
       border-radius: 8px;
 }
+
 .units, .services, .contact, .login{	
 	font-size: 20px;
 	color: #fff;
