@@ -52,7 +52,7 @@ $(window).scroll(function(event){
             }
             $('#navbar').fadeIn(500);
             $('#navbar nav').css({
-                'background-color': '#1b2030',
+                'background-color': '#1d194c',//#1b2030
             });
         }
 
@@ -62,7 +62,7 @@ $(window).scroll(function(event){
 
 //countdown *****
 // Set the date we're counting down to
-var countDownDate = new Date("July 31, 2017 22:37:25").getTime();
+var countDownDate = new Date("August 25, 2017 22:37:25").getTime();
 
 // Update the count down every 1 second
 var countdownfunction = setInterval(function() {

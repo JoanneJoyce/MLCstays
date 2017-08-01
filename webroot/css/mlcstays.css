@@ -86,11 +86,17 @@ hr  {
 
 }
 .products {
-      height: 80%;
+      height: 200px;
       width: 300px;
       display: inline-block;
       vertical-align: top;
       border-radius: 8px;
+      overflow: hidden; 
+}
+.products img{
+    width: 100%;
+    height: auto;
+
 }
 
 .units, .services, .contact, .login{	

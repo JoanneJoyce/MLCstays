@@ -1958,8 +1958,7 @@ $this->layout = false;
 
     
       
-         
-       
+    
       <div  class= "waves-effect waves-block waves-light section scrollspy">
                <?= $this->Html->image('6.jpg', ['class'=>'bgimg']) ?> <!-- random image -->
       <div  id="services" class="middle caption center-align text-lighten-8 section scrollspy">
@@ -1968,12 +1967,9 @@ $this->layout = false;
               <h1 >COMING SOON</h1>
               <hr>
               <p id="cdtime" style="font-size:30px" ></p>
-
       </div>
-         
-
-
       </div>
+     
       
         
 
@@ -2042,7 +2038,7 @@ $this->layout = false;
           </a>
         </li>
 		<li>
-        <a href="#">
+        <a href="mailto:webmaster@decode.co.uk">
           
             <?= $this->Html->image('instagram-logo.png', ['class' => 'facebook']) ?>
           </a>
