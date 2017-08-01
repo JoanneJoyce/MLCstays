@@ -1957,7 +1957,7 @@ $this->layout = false;
 
 
     
-      
+    
     
       <div  class= "waves-effect waves-block waves-light section scrollspy">
                <?= $this->Html->image('6.jpg', ['class'=>'bgimg']) ?> <!-- random image -->
@@ -2038,7 +2038,7 @@ $this->layout = false;
           </a>
         </li>
 		<li>
-        <a href="mailto:webmaster@decode.co.uk">
+        <a href="mailto:dasigjp2017@gmail.com">
           
             <?= $this->Html->image('instagram-logo.png', ['class' => 'facebook']) ?>
           </a>
