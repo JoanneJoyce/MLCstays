@@ -82,12 +82,11 @@ $this->layout = false;
 
        
 
-     <div class="row">
-
+  <div class="row">
           <div id="Units" class="section scrollspy">
              <h4><center> Units </center></h4>
           </div>
-     </div>
+  </div>
   <div class="row">
 
       <div class="col 14">

@@ -30,7 +30,7 @@ $this->layout = false;
       <li><a href="#units" class = "units">Units</a></li>
       <li><a href="#services" class = "services">Services</a></li>
       <li><a href="#aboutus" class = "contact">About Us</a></li>
-      <li><a href="#" class = "login">Login</a></li>
+      <li><a href="#" class = "login" data-target="login1">Login</a></li>
       <li class = "login">|</li>
       <li><a href="#" class = "login">Sign Up</a></li>
     </ul>
@@ -44,6 +44,17 @@ $this->layout = false;
  </nav>
 </div>
 
+          <div id="login1" class="modal">
+                <div class="modal-content">
+                  <?= $this->Form->create(); ?>
+                      <?= $this->Form->input('Username'); ?>
+                      <?= $this->Form->input('Password', array('type' => 'password')); ?>
+                      <?= $this->Form->submit('Login', array('class' => 'button')); ?>
+                  <?= $this->Form->end(); ?>
+                </div>
+          </div>      
+
+
 <div class="slider container-fluid">
   <ul class="slides container-fluid">
     <li>
@@ -52,12 +63,16 @@ $this->layout = false;
       <h3>This is our big Tagline!</h3>
       <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
     </div>
+    <div class="caption left-align">
+    <h4>MLCstays@rocketmail.com</h4>
+    <h5 class="light grey-text text-lighten-3">09212703859</h5>
+  </div>
   </li>
   <li>
    <?= $this->Html->image('pic2.png') ?>  <!-- random image -->
    <div class="caption left-align">
-    <h3>Left Aligned Caption</h3>
-    <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+    <h4>MLCstays@rocketmail.com</h4>
+    <h5 class="light grey-text text-lighten-3">09212703859</h5>
   </div>
 </li>
 <li>
@@ -66,6 +81,10 @@ $this->layout = false;
   <h3>Right Aligned Caption</h3>
   <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
 </div>
+<div class="caption left-align">
+    <h4>MLCstays@rocketmail.com</h4>
+    <h5 class="light grey-text text-lighten-3">09212703859</h5>
+  </div>
 </li>
 <li>
  <?= $this->Html->image('pic4.jpg') ?>  <!-- random image -->
@@ -73,6 +92,10 @@ $this->layout = false;
   <h3>This is our big Tagline!</h3>
   <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
 </div>
+<div class="caption left-align">
+    <h4>MLCstays@rocketmail.com</h4>
+    <h5 class="light grey-text text-lighten-3">09212703859</h5>
+  </div>
 </li> 
 </ul>
 </div>
@@ -1957,7 +1980,7 @@ $this->layout = false;
 
 
     
-    
+    <div class = "col 14">
     
       <div  class= "waves-effect waves-block waves-light section scrollspy">
                <?= $this->Html->image('6.jpg', ['class'=>'bgimg']) ?> <!-- random image -->
@@ -1969,6 +1992,7 @@ $this->layout = false;
               <p id="cdtime" style="font-size:30px" ></p>
       </div>
       </div>
+    </div>  
      
       
         
@@ -2009,7 +2033,7 @@ $this->layout = false;
 
 
 </div>
-</body>
+
 <footer class="page-footer">
   <div class="container">
     <div class="row">
@@ -2045,9 +2069,9 @@ $this->layout = false;
         </li>
       </ul>
       © 2017 MLCStays
-      <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+      <a class=" text-lighten-4 right" href="mailto:dasigjp2017@gmail.com">Email Us here!</a>
     </div>
   </div>
 </footer>
-
+</body>
 </html>

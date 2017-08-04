@@ -7,7 +7,6 @@
   z-index: -1;
   background-position: center;
   background-size:100% auto;
-  
 }
 
 .topleft {
@@ -296,7 +295,7 @@ nav .brand-logo {
   }
 }
 
-
+/*
 .modal.left .modal-dialog,
   .modal.right .modal-dialog {
     position: fixed;
@@ -313,7 +312,7 @@ nav .brand-logo {
     padding: 15px 15px 80px;
   }
 
-/*Left*/
+
   .modal.left.fade .modal-dialog{
     left: -320px;
     -webkit-transition: opacity 0.3s linear, left 0.3s ease-out;
@@ -326,7 +325,7 @@ nav .brand-logo {
     left: 0;
   }
         
-/*Right*/
+
   .modal.right.fade .modal-dialog {
     right: -320px;
     -webkit-transition: opacity 0.3s linear, right 0.3s ease-out;
@@ -339,3 +338,4 @@ nav .brand-logo {
     right: 0;
   }
 
+**/
