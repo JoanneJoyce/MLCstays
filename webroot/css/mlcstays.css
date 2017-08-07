@@ -1,14 +1,32 @@
+.productgrid{
+   box-sizing: border-box;
+   padding: 12px ;
+   border:2px solid #ccc;
+}
+.dbox{
+  border:1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 20px;
+}
+.itembox:hover{
+  border:1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 20px;
+  overflow: hidden;
+  
+
+}
 .bgimg {
   border-radius: 20px; 
   height: 20%;
   width: 1900px;
+  position: absolute;
   display: inline-block;
   vertical-align: top;
   z-index: -1;
   background-position: center;
   background-size:100% auto;
 }
-
 .topleft {
     position: absolute;
     top: 0;
@@ -76,6 +94,11 @@ hr  {
 .products1{
   border-radius: 20px;
   cursor: pointer;
+  width: 300px;
+  height: 200px;
+  display: inline-block;
+  overflow: hidden;
+      vertical-align: top;
   
 }
 .price {
@@ -206,12 +229,6 @@ nav .brand-logo {
   }
   
 }
-
-@media (min-width: 768px) {
-}
-
-
-
 @media (max-width: 767px){
 
   .slider {

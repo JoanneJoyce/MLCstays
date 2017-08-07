@@ -2160,7 +2160,10 @@ html {
  * Remove default margin.
  */
 body {
-  margin: 0;
+  margin: auto;
+  height: auto;
+  max-width: 100%;
+
 }
 
 /* HTML5 display definitions
@@ -5594,15 +5597,16 @@ button.btn-floating {
   padding: 0;
   max-height: auto;/* ni set ko sa auto ito orig(70%)*/
   width: 55%;
+  max-width: 100%;
   margin: auto;
   overflow-y: auto;
   border-radius: 50px;
   will-change: top, opacity;
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 992px) {        /*add other dimension for other deice*/
   .modal {
-    width: 80%;
+    width: 40%;
   }
 }
 

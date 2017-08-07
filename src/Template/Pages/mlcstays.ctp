@@ -5,21 +5,24 @@ $this->layout = false;
 <!DOCTYPE html>
 <html>
 <head>
-  <?= $this->Html->charset() ?>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <?= $this->Html->charset() ?>
+  
   <title> MLCStays</title>
+
+
 
   <?= $this->Html->css('materialize.css') ?>
   <?= $this->Html->css('mlcstays.css') ?>
   <?= $this->Html->css('material-icons.css') ?>
+  
 
-  <?= $this->Html->script('jquery-2.1.4.js') ?>
+  <?= $this->Html->script('jquery-2.1.4.js') ?> <!-- jquery 3.2.1 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
   <?= $this->Html->script('materialize.js') ?>
   <?= $this->Html->script('mlc-stays-scripts.js') ?>
+  
 
 </head>
 <body class="home">
@@ -45,7 +48,7 @@ $this->layout = false;
      <li><a href="#" class = "login">Login</a></li>
      <li><a href="#" class = "login">Sign Up</a></li>
    </ul>
- </nav>
+    </nav>
 </div>
 
           <div id="login1" class="modal">
@@ -66,28 +69,28 @@ $this->layout = false;
      <div class="caption center-align">
       <h3>This is our big Tagline!</h3>
       <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-    </div>
+     </div>
     <div class="caption left-align">
     <h4>MLCstays@rocketmail.com</h4>
-    <h5 class="light grey-text text-lighten-3">09212703859</h5>
+    <p class="light grey-text text-lighten-3"> +1 (800) 804-2316</p>
   </div>
   </li>
   <li>
    <?= $this->Html->image('pic2.png') ?>  <!-- random image -->
    <div class="caption left-align">
     <h4>MLCstays@rocketmail.com</h4>
-    <h5 class="light grey-text text-lighten-3">09212703859</h5>
+    <p class="light grey-text text-lighten-3"> +1 (800) 804-2316</p>
   </div>
-</li>
-<li>
- <?= $this->Html->image('pic3.jpg') ?>  <!-- random image -->
- <div class="caption right-align">
-  <h3>Right Aligned Caption</h3>
-  <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-</div>
+    </li>
+     <li>
+    <?= $this->Html->image('pic3.jpg') ?>  <!-- random image -->
+         <div class="caption right-align">
+      <h3>Right Aligned Caption</h3>
+       <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        </div>
 <div class="caption left-align">
     <h4>MLCstays@rocketmail.com</h4>
-    <h5 class="light grey-text text-lighten-3">09212703859</h5>
+    <p class="light grey-text text-lighten-3"> +1 (800) 804-2316</p>
   </div>
 </li>
 <li>
@@ -98,7 +101,7 @@ $this->layout = false;
 </div>
 <div class="caption left-align">
     <h4>MLCstays@rocketmail.com</h4>
-    <h5 class="light grey-text text-lighten-3">09212703859</h5>
+    <p class="light grey-text text-lighten-3"> +1 (800) 804-2316</p>
   </div>
 </li> 
 </ul>
@@ -133,32 +136,26 @@ $this->layout = false;
         <p>IMAGE HERE</p>
       </div>
     </div>
+   <hr/>
+   <hr/>
+   <hr/>
   </div>
-  <hr/>
-  <hr/>
-  <hr/>
 
+<div class = "productgrid col 14" >      
+  <div class="row"> <!-- 5 per line-->
 
-
-
-            <!-- Product Grid is 5units per row -->
-
-<div class="row">
-          <div id="units" class="section scrollspy">
-             <h4><center> UNITS </center></h4>
-             <h5><center>units intro here</center></h5>
-          </div>
-</div>
-  <div class="row">
-      <div class="col 14">
-      <!-- 1st product -->
-            <div class= "waves-effect waves-block waves-light" data-target="m1">
-             <?= $this->Html->image('/units/bayside miami 1/u1.jpg', ['class'=>'products']) ?>
-            </div>
-             <!-- Modal m1 -->
-             <div id="m1" class="modal">
+   <div class="col 14 itembox">
+    <div class= "waves-effect waves-block waves-light" data-target="m1">
+         <?= $this->Html->image('/units/bayside miami 1/u1.jpg', ['class'=>'products']) ?>
+    </div>
+    <div class="caption center-align">
+          <h4><center>Bayside Miami 1</center></h4>
+          <h5 class="price light grey-text text-lighten-7"><left>$20.00</left></h5>
+          <button data-target="b1" class="waves-effect waves-light btn">Book</button>
+    </div>  
+    <div id="m1" class="modal ">
                 <div class="modal-content">
-                 <h4><center>Condo #1</center></h4>
+                 <h4><center>Bayside Miami 1</center></h4>
                   <h5 class="price light grey-text text-lighten-7"><center>$20.00</center></h5>
                   <hr/>
                    <div class="carousel">
@@ -176,43 +173,28 @@ $this->layout = false;
                       <a class="carousel-item" ><center>picname12</center><?= $this->Html->image('/units/bayside miami 1/u13.jpg',['class'=>'products1']) ?></a>
                       <a class="carousel-item" ><center>picname13</center><?= $this->Html->image('/units/bayside miami 1/u14.jpg',['class'=>'products1']) ?></a>
                    </div>
-
                    <hr/>
                   <h4>About:</h4>
-
-                  <h5>The Manor House Inn was awarded one of the Top 10 Best Inns in the US. It is located in the beautiful tree lined West Street Historic District, one of Bar Harbor's most convenient in town locations. The inn is just a short walk to all village shopping, restaurants and ocean front activities. In addition Acadia National Park is just 1 mile away. Manor House Inn consists of the original three story Victorian Mansion, built in 1887
-                  </h5>
+                  <p>The Manor House Inn was awarded one of the Top 10 Best Inns in the US. It is located in the beautiful tree lined West Street Historic District, one of Bar Harbor's most convenient in town locations. The inn is just a short walk to all village shopping, restaurants and ocean front activities. In addition Acadia National Park is just 1 mile away. Manor House Inn consists of the original three story Victorian Mansion, built in 1887
+                  </p>
                   <hr/>
-                  <div class="col 14">
-                  <h4 id = "country">Country</h4>
-                  
-                  <h4>Address</h4>
-                  </div>
-                  <div class="col 14">
-                  <h4>:Singapore</h4>
-                  <h5>:Circuit Rd. Building 45, Blk 13 room 32</h5>
-                  </div>
+                      <div class="col 14">
+                          <h4 id = "country">Country</h4> 
+                          <h4>Address</h4>
+                      </div>
+                    <div class="col 14">
+                       <h4>:Singapore</h4>
+                       <h5>:Circuit Rd. Building 45, Blk 13 room 32</h5>
+                    </div>
                 </div>
              </div>
-             
-             
-          <div class="caption center-align">
-             <h4><center>Bayside Miami 1</center></h4>
-             <h5 class="price light grey-text text-lighten-7"><left>$20.00</left></h5>
-             <button data-target="b1" class="waves-effect waves-light btn">Book</button>
-          </div>
-
-          <!-- Modal b1 -->
-         <div class="modal" id="b1" tabindex="-1" role="dialog" >
+            <div class="modal" id="b1" tabindex="-1" role="dialog" >
               <div class="modal-dialog">
                 <div class="modal-content">
-             <!-- Modal Header -->
                   <div class="modal-header">
                     <h2 id="Productlabel"><center>1(Condo)</center></h2>
                     <hr/>
                   </div>
-                  
-            <!-- Modal Body -->
              <div class="modal-body">
                     <!-- Product info -->
                   <div  class = "col 14" id = "details">
@@ -242,27 +224,23 @@ $this->layout = false;
                     <div class="col 14">
                        <h4 id = "bedcount">:2 Master Beds</h4>
                        <h4 id = "productrate">:$20.00</h4>
-  
                     </div>
-                    
                   </div>
-
-
- 
              </div>
-
-            
         </div>
+      </div>
+    </div>    
+   </div> <!-- 1st item end -->
 
-    </div>
-</div> <!-- end modal b1 -->   
-     </div><!-- end of product 1-->
-     <!-- 2nd unit-->
-     <div class="col 14">
-            <div class= "waves-effect waves-block waves-light" data-target="m2">
+   <div class="col 14 itembox">
+   <div class= "waves-effect waves-block waves-light" data-target="m2">
              <?= $this->Html->image('/units/bayside miami 2/u1.jpg', ['class'=>'products']) ?>
-            </div>
-             <!-- Modal m -->
+    </div>
+          <div class="caption center-align">
+             <h4><center>Bayside Miami 2</center></h4>
+             <h5 class="price light grey-text text-lighten-7"><left>$20.00</left></h5>
+             <button data-target="b2" class="waves-effect waves-light btn">Book</button>
+          </div>
              <div id="m2" class="modal">
                 <div class="modal-content">
                  <h4><center>Condo #1</center></h4>
@@ -285,8 +263,8 @@ $this->layout = false;
                    </div>
                    <hr/>
                   <h4>About:</h4>
-                  <h5>The Manor House Inn was awarded one of the Top 10 Best Inns in the US. It is located in the beautiful tree lined West Street Historic District, one of Bar Harbor's most convenient in town locations. The inn is just a short walk to all village shopping, restaurants and ocean front activities. In addition Acadia National Park is just 1 mile away. Manor House Inn consists of the original three story Victorian Mansion, built in 1887
-                  </h5>
+                  <p>The Manor House Inn was awarded one of the Top 10 Best Inns in the US. It is located in the beautiful tree lined West Street Historic District, one of Bar Harbor's most convenient in town locations. The inn is just a short walk to all village shopping, restaurants and ocean front activities. In addition Acadia National Park is just 1 mile away. Manor House Inn consists of the original three story Victorian Mansion, built in 1887
+                  </p>
                   <hr/>
                   <div class="col 14">
                   <h4 id = "country">Country</h4> 
@@ -298,21 +276,14 @@ $this->layout = false;
                   </div>
                 </div>
              </div>   
-          <div class="caption center-align">
-             <h4><center>Bayside Miami 2</center></h4>
-             <h5 class="price light grey-text text-lighten-7"><left>$20.00</left></h5>
-             <button data-target="b2" class="waves-effect waves-light btn">Book</button>
-          </div>
           <!-- Modal m2 -->
          <div class="modal" id="b2" tabindex="-1" role="dialog" >
               <div class="modal-dialog">
                 <div class="modal-content">
-             <!-- Modal Header -->
                   <div class="modal-header">
                     <h2 id="Productlabel"><center>1(Condo)</center></h2>
                     <hr/>
                   </div>  
-            <!-- Modal Body -->
              <div class="modal-body">
                     <!-- Product info -->
                   <div  class = "col 14" id = "details">
@@ -346,16 +317,20 @@ $this->layout = false;
                   </div>
              </div>    
         </div>
-    </div>
-</div> <!-- end modal m2 -->   
-     </div><!-- end of product 2-->
-<!-- 3rd unit-->
-     <div class="col 14">
-            <div class= "waves-effect waves-block waves-light" data-target="m3">
+       </div>
+      </div>   
+   </div><!-- 2nd item end -->
+
+   <div class="col 14 itembox">
+        <div class= "waves-effect waves-block waves-light" data-target="m3">
              <?= $this->Html->image('/units/bayside miami 3/u1.jpg', ['class'=>'products']) ?>
-            </div>
-             <!-- Modal m -->
-             <div id="m3" class="modal">
+        </div>
+        <div class="caption center-align">
+             <h4><center>Bayside Miami 3</center></h4>
+             <h5 class="price light grey-text text-lighten-7"><left>$20.00</left></h5>
+             <button data-target="b3" class="waves-effect waves-light btn">Book</button>
+        </div>
+        <div id="m3" class="modal">
                 <div class="modal-content">
                  <h4><center>Condo #1</center></h4>
                   <h5 class="price light grey-text text-lighten-7"><center>$20.00</center></h5>
@@ -377,8 +352,8 @@ $this->layout = false;
                    </div>
                    <hr/>
                   <h4>About:</h4>
-                  <h5>The Manor House Inn was awarded one of the Top 10 Best Inns in the US. It is located in the beautiful tree lined West Street Historic District, one of Bar Harbor's most convenient in town locations. The inn is just a short walk to all village shopping, restaurants and ocean front activities. In addition Acadia National Park is just 1 mile away. Manor House Inn consists of the original three story Victorian Mansion, built in 1887
-                  </h5>
+                  <p>The Manor House Inn was awarded one of the Top 10 Best Inns in the US. It is located in the beautiful tree lined West Street Historic District, one of Bar Harbor's most convenient in town locations. The inn is just a short walk to all village shopping, restaurants and ocean front activities. In addition Acadia National Park is just 1 mile away. Manor House Inn consists of the original three story Victorian Mansion, built in 1887
+                  </p>
                   <hr/>
                   <div class="col 14">
                   <h4 id = "country">Country</h4> 
@@ -389,22 +364,14 @@ $this->layout = false;
                   <h5>:Circuit Rd. Building 45, Blk 13 room 32</h5>
                   </div>
                 </div>
-             </div>   
-          <div class="caption center-align">
-             <h4><center>Bayside Miami 3</center></h4>
-             <h5 class="price light grey-text text-lighten-7"><left>$20.00</left></h5>
-             <button data-target="b3" class="waves-effect waves-light btn">Book</button>
-          </div>
-          <!-- Modal m2 -->
-         <div class="modal" id="b3" tabindex="-1" role="dialog" >
-              <div class="modal-dialog">
+             </div>
+          <div class="modal" id="b3" tabindex="-1" role="dialog" >
+             <div class="modal-dialog">
                 <div class="modal-content">
-             <!-- Modal Header -->
                   <div class="modal-header">
                     <h2 id="Productlabel"><center>1(Condo)</center></h2>
                     <hr/>
-                  </div>  
-            <!-- Modal Body -->
+                  </div>
              <div class="modal-body">
                     <!-- Product info -->
                   <div  class = "col 14" id = "details">
@@ -438,16 +405,20 @@ $this->layout = false;
                   </div>
              </div>    
         </div>
-    </div>
-</div> <!-- end modal m2 -->   
-     </div><!-- end of product 3-->
-<!-- 4th unit-->
-     <div class="col 14">
-            <div class= "waves-effect waves-block waves-light" data-target="m4">
+       </div>
+       </div>
+   </div><!-- 3rd item end -->
+
+   <div class="col 14 itembox">
+      <div class= "waves-effect waves-block waves-light" data-target="m4">
              <?= $this->Html->image('/units/downtown miami lux/u1.jpg', ['class'=>'products']) ?>
-            </div>
-             <!-- Modal m -->
-             <div id="m4" class="modal">
+      </div>
+      <div class="caption center-align">
+             <h4><center>Downtown Miami</center></h4>
+             <h5 class="price light grey-text text-lighten-7"><left>$20.00</left></h5>
+             <button data-target="b4" class="waves-effect waves-light btn">Book</button>
+      </div>
+      <div id="m4" class="modal">
                 <div class="modal-content">
                  <h4><center>Condo #1</center></h4>
                   <h5 class="price light grey-text text-lighten-7"><center>$20.00</center></h5>
@@ -466,8 +437,8 @@ $this->layout = false;
                    </div>
                    <hr/>
                   <h4>About:</h4>
-                  <h5>The Manor House Inn was awarded one of the Top 10 Best Inns in the US. It is located in the beautiful tree lined West Street Historic District, one of Bar Harbor's most convenient in town locations. The inn is just a short walk to all village shopping, restaurants and ocean front activities. In addition Acadia National Park is just 1 mile away. Manor House Inn consists of the original three story Victorian Mansion, built in 1887
-                  </h5>
+                  <p>The Manor House Inn was awarded one of the Top 10 Best Inns in the US. It is located in the beautiful tree lined West Street Historic District, one of Bar Harbor's most convenient in town locations. The inn is just a short walk to all village shopping, restaurants and ocean front activities. In addition Acadia National Park is just 1 mile away. Manor House Inn consists of the original three story Victorian Mansion, built in 1887
+                  </p>
                   <hr/>
                   <div class="col 14">
                   <h4 id = "country">Country</h4> 
@@ -478,22 +449,14 @@ $this->layout = false;
                   <h5>:Circuit Rd. Building 45, Blk 13 room 32</h5>
                   </div>
                 </div>
-             </div>   
-          <div class="caption center-align">
-             <h5><center>Downtown Miami Luxury</center></h5>
-             <h5 class="price light grey-text text-lighten-7"><left>$20.00</left></h5>
-             <button data-target="b4" class="waves-effect waves-light btn">Book</button>
-          </div>
-          <!-- Modal m2 -->
-         <div class="modal" id="b4" tabindex="-1" role="dialog" >
+        </div>
+        <div class="modal" id="b4" tabindex="-1" role="dialog" >
               <div class="modal-dialog">
                 <div class="modal-content">
-             <!-- Modal Header -->
                   <div class="modal-header">
                     <h2 id="Productlabel"><center>1(Condo)</center></h2>
                     <hr/>
-                  </div>  
-            <!-- Modal Body -->
+                  </div>
              <div class="modal-body">
                     <!-- Product info -->
                   <div  class = "col 14" id = "details">
@@ -527,16 +490,20 @@ $this->layout = false;
                   </div>
              </div>    
         </div>
-    </div>
-</div> <!-- end modal m2 -->   
-     </div><!-- end of product 4-->
-<!-- 5th unit-->
-     <div class="col 14">
-            <div class= "waves-effect waves-block waves-light" data-target="m5">
+       </div>
+      </div>
+   </div><!-- 4th item end -->
+ 
+   <div class="col 14 itembox">
+     <div class= "waves-effect waves-block waves-light" data-target="m5">
              <?= $this->Html->image('/units/havana luxury 1/u1.jpg', ['class'=>'products']) ?>
-            </div>
-             <!-- Modal m -->
-             <div id="m5" class="modal">
+     </div>
+     <div class="caption center-align">
+             <h4><center>Havana luxury 1</center></h4>
+             <h5 class="price light grey-text text-lighten-7"><left>$20.00</left></h5>
+             <button data-target="b5" class="waves-effect waves-light btn">Book</button>
+      </div>
+      <div id="m5" class="modal">
                 <div class="modal-content">
                  <h4><center>Condo #1</center></h4>
                   <h5 class="price light grey-text text-lighten-7"><center>$20.00</center></h5>
@@ -557,8 +524,8 @@ $this->layout = false;
                    </div>
                    <hr/>
                   <h4>About:</h4>
-                  <h5>The Manor House Inn was awarded one of the Top 10 Best Inns in the US. It is located in the beautiful tree lined West Street Historic District, one of Bar Harbor's most convenient in town locations. The inn is just a short walk to all village shopping, restaurants and ocean front activities. In addition Acadia National Park is just 1 mile away. Manor House Inn consists of the original three story Victorian Mansion, built in 1887
-                  </h5>
+                  <p>The Manor House Inn was awarded one of the Top 10 Best Inns in the US. It is located in the beautiful tree lined West Street Historic District, one of Bar Harbor's most convenient in town locations. The inn is just a short walk to all village shopping, restaurants and ocean front activities. In addition Acadia National Park is just 1 mile away. Manor House Inn consists of the original three story Victorian Mansion, built in 1887
+                  </p>
                   <hr/>
                   <div class="col 14">
                   <h4 id = "country">Country</h4> 
@@ -569,22 +536,14 @@ $this->layout = false;
                   <h5>:Circuit Rd. Building 45, Blk 13 room 32</h5>
                   </div>
                 </div>
-             </div>   
-          <div class="caption center-align">
-             <h4><center>Havana luxury 1</center></h4>
-             <h5 class="price light grey-text text-lighten-7"><left>$20.00</left></h5>
-             <button data-target="b5" class="waves-effect waves-light btn">Book</button>
-          </div>
-          <!-- Modal m2 -->
-         <div class="modal" id="b5" tabindex="-1" role="dialog" >
+      </div>
+      <div class="modal" id="b5" tabindex="-1" role="dialog" >
               <div class="modal-dialog">
                 <div class="modal-content">
-             <!-- Modal Header -->
                   <div class="modal-header">
                     <h2 id="Productlabel"><center>1(Condo)</center></h2>
                     <hr/>
-                  </div>  
-            <!-- Modal Body -->
+                  </div>
              <div class="modal-body">
                     <!-- Product info -->
                   <div  class = "col 14" id = "details">
@@ -618,18 +577,23 @@ $this->layout = false;
                   </div>
              </div>    
         </div>
-    </div>
-</div> <!-- end modal m2 -->   
-     </div><!-- end of product 5-->
-</div>
- <div class="row">    
-<!-- 6th unit-->
-     <div class="col 14">
+       </div>
+       </div>
+   </div><!-- 5th item end -->
+
+  </div><!-- 1st row product row end-->
+
+ <div class="row"> <!-- 5 per line-->
+      <div class="col 14 itembox">
             <div class= "waves-effect waves-block waves-light" data-target="m6">
              <?= $this->Html->image('/units/havana luxury 2/u1.jpg', ['class'=>'products']) ?>
             </div>
-             <!-- Modal m -->
-             <div id="m6" class="modal">
+            <div class="caption center-align">
+             <h4><center>Havana luxury 2</center></h4>
+             <h5 class="price light grey-text text-lighten-7"><left>$20.00</left></h5>
+             <button data-target="b6" class="waves-effect waves-light btn">Book</button>
+            </div>
+            <div id="m6" class="modal">
                 <div class="modal-content">
                  <h4><center>Condo #1</center></h4>
                   <h5 class="price light grey-text text-lighten-7"><center>$20.00</center></h5>
@@ -648,8 +612,8 @@ $this->layout = false;
                    </div>
                    <hr/>
                   <h4>About:</h4>
-                  <h5>The Manor House Inn was awarded one of the Top 10 Best Inns in the US. It is located in the beautiful tree lined West Street Historic District, one of Bar Harbor's most convenient in town locations. The inn is just a short walk to all village shopping, restaurants and ocean front activities. In addition Acadia National Park is just 1 mile away. Manor House Inn consists of the original three story Victorian Mansion, built in 1887
-                  </h5>
+                  <p>The Manor House Inn was awarded one of the Top 10 Best Inns in the US. It is located in the beautiful tree lined West Street Historic District, one of Bar Harbor's most convenient in town locations. The inn is just a short walk to all village shopping, restaurants and ocean front activities. In addition Acadia National Park is just 1 mile away. Manor House Inn consists of the original three story Victorian Mansion, built in 1887
+                  </p>
                   <hr/>
                   <div class="col 14">
                   <h4 id = "country">Country</h4> 
@@ -660,14 +624,8 @@ $this->layout = false;
                   <h5>:Circuit Rd. Building 45, Blk 13 room 32</h5>
                   </div>
                 </div>
-             </div>   
-          <div class="caption center-align">
-             <h4><center>Havana luxury 2</center></h4>
-             <h5 class="price light grey-text text-lighten-7"><left>$20.00</left></h5>
-             <button data-target="b6" class="waves-effect waves-light btn">Book</button>
-          </div>
-          <!-- Modal m2 -->
-         <div class="modal" id="b6" tabindex="-1" role="dialog" >
+             </div>
+             <div class="modal" id="b6" tabindex="-1" role="dialog" >
               <div class="modal-dialog">
                 <div class="modal-content">
              <!-- Modal Header -->
@@ -708,17 +666,21 @@ $this->layout = false;
                     </div>   
                   </div>
              </div>    
-        </div>
-    </div>
-</div> <!-- end modal m2 -->   
-     </div><!-- end of product 6-->
-<!-- 7th unit-->
-     <div class="col 14">
-            <div class= "waves-effect waves-block waves-light" data-target="m7">
-             <?= $this->Html->image('/units/havana luxury 3/u1.jpg', ['class'=>'products']) ?>
             </div>
-             <!-- Modal m -->
-             <div id="m7" class="modal">
+            </div>
+           </div>
+      </div><!-- 6th item end -->
+
+      <div class="col 14 itembox">
+           <div class= "waves-effect waves-block waves-light" data-target="m7">
+             <?= $this->Html->image('/units/havana luxury 3/u1.jpg', ['class'=>'products']) ?>
+           </div>
+           <div class="caption center-align">
+             <h4><center>Havana luxury 3</center></h4>
+             <h5 class="price light grey-text text-lighten-7"><left>$20.00</left></h5>
+             <button data-target="b7" class="waves-effect waves-light btn">Book</button>
+           </div>
+           <div id="m7" class="modal">
                 <div class="modal-content">
                  <h4><center>Condo #1</center></h4>
                   <h5 class="price light grey-text text-lighten-7"><center>$20.00</center></h5>
@@ -740,8 +702,8 @@ $this->layout = false;
                    </div>
                    <hr/>
                   <h4>About:</h4>
-                  <h5>The Manor House Inn was awarded one of the Top 10 Best Inns in the US. It is located in the beautiful tree lined West Street Historic District, one of Bar Harbor's most convenient in town locations. The inn is just a short walk to all village shopping, restaurants and ocean front activities. In addition Acadia National Park is just 1 mile away. Manor House Inn consists of the original three story Victorian Mansion, built in 1887
-                  </h5>
+                  <p>The Manor House Inn was awarded one of the Top 10 Best Inns in the US. It is located in the beautiful tree lined West Street Historic District, one of Bar Harbor's most convenient in town locations. The inn is just a short walk to all village shopping, restaurants and ocean front activities. In addition Acadia National Park is just 1 mile away. Manor House Inn consists of the original three story Victorian Mansion, built in 1887
+                  </p>
                   <hr/>
                   <div class="col 14">
                   <h4 id = "country">Country</h4> 
@@ -752,14 +714,8 @@ $this->layout = false;
                   <h5>:Circuit Rd. Building 45, Blk 13 room 32</h5>
                   </div>
                 </div>
-             </div>   
-          <div class="caption center-align">
-             <h4><center>Havana luxury 3</center></h4>
-             <h5 class="price light grey-text text-lighten-7"><left>$20.00</left></h5>
-             <button data-target="b7" class="waves-effect waves-light btn">Book</button>
-          </div>
-          <!-- Modal m2 -->
-         <div class="modal" id="b7" tabindex="-1" role="dialog" >
+             </div>
+             <div class="modal" id="b7" tabindex="-1" role="dialog" >
               <div class="modal-dialog">
                 <div class="modal-content">
              <!-- Modal Header -->
@@ -800,17 +756,21 @@ $this->layout = false;
                     </div>   
                   </div>
              </div>    
-        </div>
-    </div>
-</div> <!-- end modal m2 -->   
-     </div><!-- end of product 7th-->
-<!-- 8th unit-->
-     <div class="col 14">
-            <div class= "waves-effect waves-block waves-light" data-target="m7">
+               </div>
+             </div>
+           </div>
+      </div><!-- 7th item end -->
+
+      <div class="col 14 itembox">
+           <div class= "waves-effect waves-block waves-light" data-target="m7">
              <?= $this->Html->image('/units/havana luxury1BR/u1.jpg', ['class'=>'products']) ?>
             </div>
-             <!-- Modal m -->
-             <div id="m8" class="modal">
+            <div class="caption center-align">
+             <h4><center>Havana luxury(1Br)</center></h4>
+             <h5 class="price light grey-text text-lighten-7"><left>$20.00</left></h5>
+             <button data-target="b8" class="waves-effect waves-light btn">Book</button>
+            </div>
+            <div id="m8" class="modal">
                 <div class="modal-content">
                  <h4><center>Condo #1</center></h4>
                   <h5 class="price light grey-text text-lighten-7"><center>$20.00</center></h5>
@@ -824,8 +784,8 @@ $this->layout = false;
                    </div>
                    <hr/>
                   <h4>About:</h4>
-                  <h5>The Manor House Inn was awarded one of the Top 10 Best Inns in the US. It is located in the beautiful tree lined West Street Historic District, one of Bar Harbor's most convenient in town locations. The inn is just a short walk to all village shopping, restaurants and ocean front activities. In addition Acadia National Park is just 1 mile away. Manor House Inn consists of the original three story Victorian Mansion, built in 1887
-                  </h5>
+                  <p>The Manor House Inn was awarded one of the Top 10 Best Inns in the US. It is located in the beautiful tree lined West Street Historic District, one of Bar Harbor's most convenient in town locations. The inn is just a short walk to all village shopping, restaurants and ocean front activities. In addition Acadia National Park is just 1 mile away. Manor House Inn consists of the original three story Victorian Mansion, built in 1887
+                  </p>
                   <hr/>
                   <div class="col 14">
                   <h4 id = "country">Country</h4> 
@@ -836,14 +796,8 @@ $this->layout = false;
                   <h5>:Circuit Rd. Building 45, Blk 13 room 32</h5>
                   </div>
                 </div>
-             </div>   
-          <div class="caption center-align">
-             <h5><center>havana luxury (1 Bedroom)</center></h5>
-             <h5 class="price light grey-text text-lighten-7"><left>$20.00</left></h5>
-             <button data-target="b8" class="waves-effect waves-light btn">Book</button>
-          </div>
-          <!-- Modal m2 -->
-         <div class="modal" id="b8" tabindex="-1" role="dialog" >
+             </div>
+             <div class="modal" id="b8" tabindex="-1" role="dialog" >
               <div class="modal-dialog">
                 <div class="modal-content">
              <!-- Modal Header -->
@@ -884,17 +838,21 @@ $this->layout = false;
                     </div>   
                   </div>
              </div>    
-        </div>
-    </div>
-</div> <!-- end modal m2 -->   
-     </div><!-- end of product 8-->
-<!-- 9th unit-->
-     <div class="col 14">
-            <div class= "waves-effect waves-block waves-light" data-target="m9">
-             <?= $this->Html->image('/units/high rise miami/u1.jpg', ['class'=>'products']) ?>
+               </div>
+             </div>
             </div>
-             <!-- Modal m -->
-             <div id="m9" class="modal">
+      </div><!-- 8th item end -->
+
+      <div class="col 14 itembox">
+          <div class= "waves-effect waves-block waves-light" data-target="m9">
+             <?= $this->Html->image('/units/high rise miami/u1.jpg', ['class'=>'products']) ?>
+          </div>
+          <div class="caption center-align">
+             <h4><center>Highrise Miami</center></h4>
+             <h5 class="price light grey-text text-lighten-7"><left>$20.00</left></h5>
+             <button data-target="b9" class="waves-effect waves-light btn">Book</button>
+          </div>
+          <div id="m9" class="modal">
                 <div class="modal-content">
                  <h4><center>Condo #1</center></h4>
                   <h5 class="price light grey-text text-lighten-7"><center>$20.00</center></h5>
@@ -916,8 +874,8 @@ $this->layout = false;
                    </div>
                    <hr/>
                   <h4>About:</h4>
-                  <h5>The Manor House Inn was awarded one of the Top 10 Best Inns in the US. It is located in the beautiful tree lined West Street Historic District, one of Bar Harbor's most convenient in town locations. The inn is just a short walk to all village shopping, restaurants and ocean front activities. In addition Acadia National Park is just 1 mile away. Manor House Inn consists of the original three story Victorian Mansion, built in 1887
-                  </h5>
+                  <p>The Manor House Inn was awarded one of the Top 10 Best Inns in the US. It is located in the beautiful tree lined West Street Historic District, one of Bar Harbor's most convenient in town locations. The inn is just a short walk to all village shopping, restaurants and ocean front activities. In addition Acadia National Park is just 1 mile away. Manor House Inn consists of the original three story Victorian Mansion, built in 1887
+                  </p>
                   <hr/>
                   <div class="col 14">
                   <h4 id = "country">Country</h4> 
@@ -928,14 +886,8 @@ $this->layout = false;
                   <h5>:Circuit Rd. Building 45, Blk 13 room 32</h5>
                   </div>
                 </div>
-             </div>   
-          <div class="caption center-align">
-             <h4><center>Highrise Miami</center></h4>
-             <h5 class="price light grey-text text-lighten-7"><left>$20.00</left></h5>
-             <button data-target="b9" class="waves-effect waves-light btn">Book</button>
-          </div>
-          <!-- Modal m2 -->
-         <div class="modal" id="b9" tabindex="-1" role="dialog" >
+             </div>
+             <div class="modal" id="b9" tabindex="-1" role="dialog" >
               <div class="modal-dialog">
                 <div class="modal-content">
              <!-- Modal Header -->
@@ -976,17 +928,21 @@ $this->layout = false;
                     </div>   
                   </div>
              </div>    
-        </div>
-    </div>
-</div> <!-- end modal m2 -->   
-     </div><!-- end of product 9-->
-<!-- 10th unit-->
-     <div class="col 14">
-            <div class= "waves-effect waves-block waves-light" data-target="m10">
+              </div>
+          </div>
+         </div>
+      </div><!-- 9th item end -->
+
+      <div class="col 14 itembox">
+          <div class= "waves-effect waves-block waves-light" data-target="m10">
              <?= $this->Html->image('/units/high rise miami 2/u1.jpg', ['class'=>'products']) ?>
-            </div>
-             <!-- Modal m -->
-             <div id="m10" class="modal">
+          </div>
+          <div class="caption center-align">
+             <h4><center>Highrise Miami 2</center></h4>
+             <h5 class="price light grey-text text-lighten-7"><left>$20.00</left></h5>
+             <button data-target="b10" class="waves-effect waves-light btn">Book</button>
+          </div>
+          <div id="m10" class="modal">
                 <div class="modal-content">
                  <h4><center>Condo #1</center></h4>
                   <h5 class="price light grey-text text-lighten-7"><center>$20.00</center></h5>
@@ -1005,8 +961,8 @@ $this->layout = false;
                    </div>
                    <hr/>
                   <h4>About:</h4>
-                  <h5>The Manor House Inn was awarded one of the Top 10 Best Inns in the US. It is located in the beautiful tree lined West Street Historic District, one of Bar Harbor's most convenient in town locations. The inn is just a short walk to all village shopping, restaurants and ocean front activities. In addition Acadia National Park is just 1 mile away. Manor House Inn consists of the original three story Victorian Mansion, built in 1887
-                  </h5>
+                  <p>The Manor House Inn was awarded one of the Top 10 Best Inns in the US. It is located in the beautiful tree lined West Street Historic District, one of Bar Harbor's most convenient in town locations. The inn is just a short walk to all village shopping, restaurants and ocean front activities. In addition Acadia National Park is just 1 mile away. Manor House Inn consists of the original three story Victorian Mansion, built in 1887
+                  </p>
                   <hr/>
                   <div class="col 14">
                   <h4 id = "country">Country</h4> 
@@ -1017,14 +973,8 @@ $this->layout = false;
                   <h5>:Circuit Rd. Building 45, Blk 13 room 32</h5>
                   </div>
                 </div>
-             </div>   
-          <div class="caption center-align">
-             <h4><center>Highrise Miami 2</center></h4>
-             <h5 class="price light grey-text text-lighten-7"><left>$20.00</left></h5>
-             <button data-target="b10" class="waves-effect waves-light btn">Book</button>
-          </div>
-          <!-- Modal m2 -->
-         <div class="modal" id="b10" tabindex="-1" role="dialog" >
+             </div>
+             <div class="modal" id="b10" tabindex="-1" role="dialog" >
               <div class="modal-dialog">
                 <div class="modal-content">
              <!-- Modal Header -->
@@ -1064,20 +1014,24 @@ $this->layout = false;
                        <h4 id = "productrate">:$20.00</h4>
                     </div>   
                   </div>
-             </div>    
-        </div>
-    </div>
-</div> <!-- end modal m2 -->   
-     </div><!-- end of product 10-->
-     </div>
-<div class="row">
-<!-- 11th unit-->
-     <div class="col 14">
+                    </div>    
+              </div>
+            </div>
+         </div>
+      </div><!-- 10th item end -->
+ </div><!-- 2nd row product row end-->
+
+ <div class="row"> <!-- 5 per line-->
+      <div class="col 14 itembox">
             <div class= "waves-effect waves-block waves-light" data-target="m11">
              <?= $this->Html->image('/units/high rise miami 3/u1.jpg', ['class'=>'products']) ?>
             </div>
-             <!-- Modal m -->
-             <div id="m11" class="modal">
+            <div class="caption center-align">
+             <h4><center>Highrise Miami 3</center></h4>
+             <h5 class="price light grey-text text-lighten-7"><left>$20.00</left></h5>
+             <button data-target="b11" class="waves-effect waves-light btn">Book</button>
+            </div>
+            <div id="m11" class="modal">
                 <div class="modal-content">
                  <h4><center>Condo #1</center></h4>
                   <h5 class="price light grey-text text-lighten-7"><center>$20.00</center></h5>
@@ -1099,8 +1053,8 @@ $this->layout = false;
                    </div>
                    <hr/>
                   <h4>About:</h4>
-                  <h5>The Manor House Inn was awarded one of the Top 10 Best Inns in the US. It is located in the beautiful tree lined West Street Historic District, one of Bar Harbor's most convenient in town locations. The inn is just a short walk to all village shopping, restaurants and ocean front activities. In addition Acadia National Park is just 1 mile away. Manor House Inn consists of the original three story Victorian Mansion, built in 1887
-                  </h5>
+                  <p>The Manor House Inn was awarded one of the Top 10 Best Inns in the US. It is located in the beautiful tree lined West Street Historic District, one of Bar Harbor's most convenient in town locations. The inn is just a short walk to all village shopping, restaurants and ocean front activities. In addition Acadia National Park is just 1 mile away. Manor House Inn consists of the original three story Victorian Mansion, built in 1887
+                  </p>
                   <hr/>
                   <div class="col 14">
                   <h4 id = "country">Country</h4> 
@@ -1111,14 +1065,8 @@ $this->layout = false;
                   <h5>:Circuit Rd. Building 45, Blk 13 room 32</h5>
                   </div>
                 </div>
-             </div>   
-          <div class="caption center-align">
-             <h4><center>Highrise Miami 3</center></h4>
-             <h5 class="price light grey-text text-lighten-7"><left>$20.00</left></h5>
-             <button data-target="b11" class="waves-effect waves-light btn">Book</button>
-          </div>
-          <!-- Modal m2 -->
-         <div class="modal" id="b11" tabindex="-1" role="dialog" >
+             </div>
+             <div class="modal" id="b11" tabindex="-1" role="dialog" >
               <div class="modal-dialog">
                 <div class="modal-content">
              <!-- Modal Header -->
@@ -1159,17 +1107,21 @@ $this->layout = false;
                     </div>   
                   </div>
              </div>    
-        </div>
-    </div>
-</div> <!-- end modal m2 -->   
-     </div><!-- end of product 11-->
-<!-- 12th unit-->
-     <div class="col 14">
-            <div class= "waves-effect waves-block waves-light" data-target="m12">
-             <?= $this->Html->image('/units/luxury center havana/u1.jpg', ['class'=>'products']) ?>
+              </div>
             </div>
-             <!-- Modal m -->
-             <div id="m12" class="modal">
+           </div>
+      </div><!-- 11th item end -->
+
+      <div class="col 14 itembox">
+          <div class= "waves-effect waves-block waves-light" data-target="m12">
+             <?= $this->Html->image('/units/luxury center havana/u1.jpg', ['class'=>'products']) ?>
+          </div>
+          <div class="caption center-align">
+             <h4><center>Center Havana</center></h4>
+             <h5 class="price light grey-text text-lighten-7"><left>$20.00</left></h5>
+             <button data-target="b12" class="waves-effect waves-light btn">Book</button>
+          </div>
+          <div id="m12" class="modal">
                 <div class="modal-content">
                  <h4><center>Condo #1</center></h4>
                   <h5 class="price light grey-text text-lighten-7"><center>$20.00</center></h5>
@@ -1191,8 +1143,8 @@ $this->layout = false;
                    </div>
                    <hr/>
                   <h4>About:</h4>
-                  <h5>The Manor House Inn was awarded one of the Top 10 Best Inns in the US. It is located in the beautiful tree lined West Street Historic District, one of Bar Harbor's most convenient in town locations. The inn is just a short walk to all village shopping, restaurants and ocean front activities. In addition Acadia National Park is just 1 mile away. Manor House Inn consists of the original three story Victorian Mansion, built in 1887
-                  </h5>
+                  <p>The Manor House Inn was awarded one of the Top 10 Best Inns in the US. It is located in the beautiful tree lined West Street Historic District, one of Bar Harbor's most convenient in town locations. The inn is just a short walk to all village shopping, restaurants and ocean front activities. In addition Acadia National Park is just 1 mile away. Manor House Inn consists of the original three story Victorian Mansion, built in 1887
+                  </p>
                   <hr/>
                   <div class="col 14">
                   <h4 id = "country">Country</h4> 
@@ -1203,14 +1155,8 @@ $this->layout = false;
                   <h5>:Circuit Rd. Building 45, Blk 13 room 32</h5>
                   </div>
                 </div>
-             </div>   
-          <div class="caption center-align">
-             <h5><center>Luxury Center Havana</center></h5>
-             <h5 class="price light grey-text text-lighten-7"><left>$20.00</left></h5>
-             <button data-target="b12" class="waves-effect waves-light btn">Book</button>
-          </div>
-          <!-- Modal m2 -->
-         <div class="modal" id="b12" tabindex="-1" role="dialog" >
+             </div>
+             <div class="modal" id="b12" tabindex="-1" role="dialog" >
               <div class="modal-dialog">
                 <div class="modal-content">
              <!-- Modal Header -->
@@ -1251,17 +1197,21 @@ $this->layout = false;
                     </div>   
                   </div>
              </div>    
-        </div>
-    </div>
-</div> <!-- end modal m2 -->   
-     </div><!-- end of product 12-->
-<!-- 13th unit-->
-     <div class="col 14">
-            <div class= "waves-effect waves-block waves-light" data-target="m13">
+          </div>
+          </div>
+         </div>
+      </div><!-- 12th item end -->
+
+      <div class="col 14 itembox">
+           <div class= "waves-effect waves-block waves-light" data-target="m13">
              <?= $this->Html->image('/units/luxury in soho 2BR/u1.jpg', ['class'=>'products']) ?>
-            </div>
-             <!-- Modal m -->
-             <div id="m13" class="modal">
+           </div>
+           <div class="caption center-align">
+             <h4><center>Luxury in soho(2Br)</center></h4>
+             <h5 class="price light grey-text text-lighten-7"><left>$20.00</left></h5>
+             <button data-target="b13" class="waves-effect waves-light btn">Book</button>
+           </div>
+           <div id="m13" class="modal">
                 <div class="modal-content">
                  <h4><center>Condo #1</center></h4>
                   <h5 class="price light grey-text text-lighten-7"><center>$20.00</center></h5>
@@ -1283,8 +1233,8 @@ $this->layout = false;
                    </div>
                    <hr/>
                   <h4>About:</h4>
-                  <h5>The Manor House Inn was awarded one of the Top 10 Best Inns in the US. It is located in the beautiful tree lined West Street Historic District, one of Bar Harbor's most convenient in town locations. The inn is just a short walk to all village shopping, restaurants and ocean front activities. In addition Acadia National Park is just 1 mile away. Manor House Inn consists of the original three story Victorian Mansion, built in 1887
-                  </h5>
+                  <p>The Manor House Inn was awarded one of the Top 10 Best Inns in the US. It is located in the beautiful tree lined West Street Historic District, one of Bar Harbor's most convenient in town locations. The inn is just a short walk to all village shopping, restaurants and ocean front activities. In addition Acadia National Park is just 1 mile away. Manor House Inn consists of the original three story Victorian Mansion, built in 1887
+                  </p>
                   <hr/>
                   <div class="col 14">
                   <h4 id = "country">Country</h4> 
@@ -1295,14 +1245,8 @@ $this->layout = false;
                   <h5>:Circuit Rd. Building 45, Blk 13 room 32</h5>
                   </div>
                 </div>
-             </div>   
-          <div class="caption center-align">
-             <h5><center>Luxury in soho(2BR)</center></h5>
-             <h5 class="price light grey-text text-lighten-7"><left>$20.00</left></h5>
-             <button data-target="b13" class="waves-effect waves-light btn">Book</button>
-          </div>
-          <!-- Modal m2 -->
-         <div class="modal" id="b13" tabindex="-1" role="dialog" >
+             </div>
+             <div class="modal" id="b13" tabindex="-1" role="dialog" >
               <div class="modal-dialog">
                 <div class="modal-content">
              <!-- Modal Header -->
@@ -1343,17 +1287,21 @@ $this->layout = false;
                     </div>   
                   </div>
              </div>    
-        </div>
-    </div>
-</div> <!-- end modal m2 -->   
-     </div><!-- end of product 13-->
-<!-- 14th unit-->
-     <div class="col 14">
-            <div class= "waves-effect waves-block waves-light" data-target="m14">
-             <?= $this->Html->image('/units/luxury in the sky/u1.jpg', ['class'=>'products']) ?>
             </div>
-             <!-- Modal m -->
-             <div id="m14" class="modal">
+           </div>
+           </div>
+      </div><!-- 13th item end -->
+
+      <div class="col 14 itembox">
+          <div class= "waves-effect waves-block waves-light" data-target="m14">
+             <?= $this->Html->image('/units/luxury in the sky/u1.jpg', ['class'=>'products']) ?>
+          </div>
+          <div class="caption center-align">
+             <h4><center>Luxury in the sky</center></h4>
+             <h5 class="price light grey-text text-lighten-7"><left>$20.00</left></h5>
+             <button data-target="b14" class="waves-effect waves-light btn">Book</button>
+          </div>
+          <div id="m14" class="modal">
                 <div class="modal-content">
                  <h4><center>Condo #1</center></h4>
                   <h5 class="price light grey-text text-lighten-7"><center>$20.00</center></h5>
@@ -1375,8 +1323,8 @@ $this->layout = false;
                    </div>
                    <hr/>
                   <h4>About:</h4>
-                  <h5>The Manor House Inn was awarded one of the Top 10 Best Inns in the US. It is located in the beautiful tree lined West Street Historic District, one of Bar Harbor's most convenient in town locations. The inn is just a short walk to all village shopping, restaurants and ocean front activities. In addition Acadia National Park is just 1 mile away. Manor House Inn consists of the original three story Victorian Mansion, built in 1887
-                  </h5>
+                  <p>The Manor House Inn was awarded one of the Top 10 Best Inns in the US. It is located in the beautiful tree lined West Street Historic District, one of Bar Harbor's most convenient in town locations. The inn is just a short walk to all village shopping, restaurants and ocean front activities. In addition Acadia National Park is just 1 mile away. Manor House Inn consists of the original three story Victorian Mansion, built in 1887
+                  </p>
                   <hr/>
                   <div class="col 14">
                   <h4 id = "country">Country</h4> 
@@ -1387,14 +1335,8 @@ $this->layout = false;
                   <h5>:Circuit Rd. Building 45, Blk 13 room 32</h5>
                   </div>
                 </div>
-             </div>   
-          <div class="caption center-align">
-             <h4><center>Luxury in the sky</center></h4>
-             <h5 class="price light grey-text text-lighten-7"><left>$20.00</left></h5>
-             <button data-target="b14" class="waves-effect waves-light btn">Book</button>
-          </div>
-          <!-- Modal m2 -->
-         <div class="modal" id="b14" tabindex="-1" role="dialog" >
+             </div>
+             <div class="modal" id="b14" tabindex="-1" role="dialog" >
               <div class="modal-dialog">
                 <div class="modal-content">
              <!-- Modal Header -->
@@ -1435,17 +1377,21 @@ $this->layout = false;
                     </div>   
                   </div>
              </div>    
-        </div>
-    </div>
-</div> <!-- end modal m2 -->   
-     </div><!-- end of product 14-->
-<!-- 15th unit-->
-     <div class="col 14">
-            <div class= "waves-effect waves-block waves-light" data-target="m15">
-             <?= $this->Html->image('/units/makaticity/u1.jpg', ['class'=>'products']) ?>
             </div>
-             <!-- Modal m -->
-             <div id="m15" class="modal">
+           </div>
+         </div>
+      </div><!-- 14th item end -->
+
+      <div class="col 14 itembox">
+           <div class= "waves-effect waves-block waves-light" data-target="m15">
+             <?= $this->Html->image('/units/makaticity/u1.jpg', ['class'=>'products']) ?>
+           </div>
+           <div class="caption center-align">
+             <h4><center>Makati City view</center></h4>
+             <h5 class="price light grey-text text-lighten-7"><left>$20.00</left></h5>
+             <button data-target="b15" class="waves-effect waves-light btn">Book</button>
+           </div>
+           <div id="m15" class="modal">
                 <div class="modal-content">
                  <h4><center>Condo #1</center></h4>
                   <h5 class="price light grey-text text-lighten-7"><center>$20.00</center></h5>
@@ -1458,8 +1404,8 @@ $this->layout = false;
                     </div>
                    <hr/>
                   <h4>About:</h4>
-                  <h5>The Manor House Inn was awarded one of the Top 10 Best Inns in the US. It is located in the beautiful tree lined West Street Historic District, one of Bar Harbor's most convenient in town locations. The inn is just a short walk to all village shopping, restaurants and ocean front activities. In addition Acadia National Park is just 1 mile away. Manor House Inn consists of the original three story Victorian Mansion, built in 1887
-                  </h5>
+                  <p>The location can not be more perfect for your Manila stay. This cozy but spacious Loft is in a high rise condo right across Greenbelt 1. Perfect for 2 but can accomodate up to 4.The best way is to take a cab from the airport. The travel distance is about 5 miles or 8 km. and may take between 30 mins. to an hour to reach the flat, depending on traffic.
+                  </p>
                   <hr/>
                   <div class="col 14">
                   <h4 id = "country">Country</h4> 
@@ -1470,14 +1416,8 @@ $this->layout = false;
                   <h5>:Circuit Rd. Building 45, Blk 13 room 32</h5>
                   </div>
                 </div>
-             </div>   
-          <div class="caption center-align">
-             <h4><center>Makati City view</center></h4>
-             <h5 class="price light grey-text text-lighten-7"><left>$20.00</left></h5>
-             <button data-target="b15" class="waves-effect waves-light btn">Book</button>
-          </div>
-          <!-- Modal m2 -->
-         <div class="modal" id="b15" tabindex="-1" role="dialog" >
+             </div>
+             <div class="modal" id="b15" tabindex="-1" role="dialog" >
               <div class="modal-dialog">
                 <div class="modal-content">
              <!-- Modal Header -->
@@ -1518,19 +1458,23 @@ $this->layout = false;
                     </div>   
                   </div>
              </div>    
-        </div>
-    </div>
-</div> <!-- end modal m2 -->   
-     </div><!-- end of product 15-->
-     </div>
-<div class="row">     
-<!-- 16th unit-->
-     <div class="col 14">
-            <div class= "waves-effect waves-block waves-light" data-target="m16">
-             <?= $this->Html->image('/units/Old havana luxury/u1.jpg', ['class'=>'products']) ?>
+                </div>
             </div>
-             <!-- Modal m -->
-             <div id="m16" class="modal">
+           </div>
+      </div><!-- 15th item end -->
+ </div><!-- 3rd row product row end-->
+
+ <div class="row"> <!-- 5 per line-->
+      <div class="col 14 itembox">
+          <div class= "waves-effect waves-block waves-light" data-target="m16">
+             <?= $this->Html->image('/units/Old havana luxury/u1.jpg', ['class'=>'products']) ?>
+          </div>
+          <div class="caption center-align">
+             <h4><center>Old havana luxury</center></h4>
+             <h5 class="price light grey-text text-lighten-7"><left>$20.00</left></h5>
+             <button data-target="b16" class="waves-effect waves-light btn">Book</button>
+          </div>
+          <div id="m16" class="modal">
                 <div class="modal-content">
                  <h4><center>Condo #1</center></h4>
                   <h5 class="price light grey-text text-lighten-7"><center>$20.00</center></h5>
@@ -1547,8 +1491,8 @@ $this->layout = false;
                       </div>
                    <hr/>
                   <h4>About:</h4>
-                  <h5>The Manor House Inn was awarded one of the Top 10 Best Inns in the US. It is located in the beautiful tree lined West Street Historic District, one of Bar Harbor's most convenient in town locations. The inn is just a short walk to all village shopping, restaurants and ocean front activities. In addition Acadia National Park is just 1 mile away. Manor House Inn consists of the original three story Victorian Mansion, built in 1887
-                  </h5>
+                  <p>The Manor House Inn was awarded one of the Top 10 Best Inns in the US. It is located in the beautiful tree lined West Street Historic District, one of Bar Harbor's most convenient in town locations. The inn is just a short walk to all village shopping, restaurants and ocean front activities. In addition Acadia National Park is just 1 mile away. Manor House Inn consists of the original three story Victorian Mansion, built in 1887
+                  </p>
                   <hr/>
                   <div class="col 14">
                   <h4 id = "country">Country</h4> 
@@ -1559,14 +1503,8 @@ $this->layout = false;
                   <h5>:Circuit Rd. Building 45, Blk 13 room 32</h5>
                   </div>
                 </div>
-             </div>   
-          <div class="caption center-align">
-             <h4><center>Old havana luxury</center></h4>
-             <h5 class="price light grey-text text-lighten-7"><left>$20.00</left></h5>
-             <button data-target="b16" class="waves-effect waves-light btn">Book</button>
-          </div>
-          <!-- Modal m2 -->
-         <div class="modal" id="b16" tabindex="-1" role="dialog" >
+             </div>
+             <div class="modal" id="b16" tabindex="-1" role="dialog" >
               <div class="modal-dialog">
                 <div class="modal-content">
              <!-- Modal Header -->
@@ -1607,17 +1545,21 @@ $this->layout = false;
                     </div>   
                   </div>
              </div>    
-        </div>
-    </div>
-</div> <!-- end modal m2 -->   
-     </div><!-- end of product 16-->
-<!-- 17th unit-->
-     <div class="col 14">
-            <div class= "waves-effect waves-block waves-light" data-target="m17">
+               </div>
+             </div>
+           </div>
+      </div><!-- 16th item end -->
+
+      <div class="col 14 itembox">
+          <div class= "waves-effect waves-block waves-light" data-target="m17">
              <?= $this->Html->image('/units/Old havana luxury 2/u1.jpg', ['class'=>'products']) ?>
-            </div>
-             <!-- Modal m -->
-             <div id="m17" class="modal">
+          </div>
+          <div class="caption center-align">
+             <h4><center>Old havana luxury 2</center></h4>
+             <h5 class="price light grey-text text-lighten-7"><left>$20.00</left></h5>
+             <button data-target="b17" class="waves-effect waves-light btn">Book</button>
+          </div>
+          <div id="m17" class="modal">
                 <div class="modal-content">
                  <h4><center>Condo #1</center></h4>
                   <h5 class="price light grey-text text-lighten-7"><center>$20.00</center></h5>
@@ -1635,8 +1577,8 @@ $this->layout = false;
                    </div>
                    <hr/>
                   <h4>About:</h4>
-                  <h5>The Manor House Inn was awarded one of the Top 10 Best Inns in the US. It is located in the beautiful tree lined West Street Historic District, one of Bar Harbor's most convenient in town locations. The inn is just a short walk to all village shopping, restaurants and ocean front activities. In addition Acadia National Park is just 1 mile away. Manor House Inn consists of the original three story Victorian Mansion, built in 1887
-                  </h5>
+                  <p>The Manor House Inn was awarded one of the Top 10 Best Inns in the US. It is located in the beautiful tree lined West Street Historic District, one of Bar Harbor's most convenient in town locations. The inn is just a short walk to all village shopping, restaurants and ocean front activities. In addition Acadia National Park is just 1 mile away. Manor House Inn consists of the original three story Victorian Mansion, built in 1887
+                  </p>
                   <hr/>
                   <div class="col 14">
                   <h4 id = "country">Country</h4> 
@@ -1647,14 +1589,8 @@ $this->layout = false;
                   <h5>:Circuit Rd. Building 45, Blk 13 room 32</h5>
                   </div>
                 </div>
-             </div>   
-          <div class="caption center-align">
-             <h4><center>Old havana luxury 2</center></h4>
-             <h5 class="price light grey-text text-lighten-7"><left>$20.00</left></h5>
-             <button data-target="b17" class="waves-effect waves-light btn">Book</button>
-          </div>
-          <!-- Modal m2 -->
-         <div class="modal" id="b17" tabindex="-1" role="dialog" >
+             </div>
+             <div class="modal" id="b17" tabindex="-1" role="dialog" >
               <div class="modal-dialog">
                 <div class="modal-content">
              <!-- Modal Header -->
@@ -1695,17 +1631,21 @@ $this->layout = false;
                     </div>   
                   </div>
              </div>    
-        </div>
-    </div>
-</div> <!-- end modal m2 -->   
-     </div><!-- end of product 17-->
-<!-- 18th unit-->
-     <div class="col 14">
-            <div class= "waves-effect waves-block waves-light" data-target="m18">
+                </div>
+             </div>
+         </div>
+      </div><!-- 17th item end -->
+
+      <div class="col 14 itembox">
+           <div class= "waves-effect waves-block waves-light" data-target="m18">
              <?= $this->Html->image('/units/penthouse lux/u1.jpg', ['class'=>'products']) ?>
-            </div>
-             <!-- Modal m -->
-             <div id="m18" class="modal">
+           </div>
+           <div class="caption center-align">
+             <h4><center>Penthouse Luxury</center></h4>
+             <h5 class="price light grey-text text-lighten-7"><left>$20.00</left></h5>
+             <button data-target="b18" class="waves-effect waves-light btn">Book</button>
+           </div>
+           <div id="m18" class="modal">
                 <div class="modal-content">
                  <h4><center>Condo #1</center></h4>
                   <h5 class="price light grey-text text-lighten-7"><center>$20.00</center></h5>
@@ -1727,8 +1667,8 @@ $this->layout = false;
                    </div>
                    <hr/>
                   <h4>About:</h4>
-                  <h5>The Manor House Inn was awarded one of the Top 10 Best Inns in the US. It is located in the beautiful tree lined West Street Historic District, one of Bar Harbor's most convenient in town locations. The inn is just a short walk to all village shopping, restaurants and ocean front activities. In addition Acadia National Park is just 1 mile away. Manor House Inn consists of the original three story Victorian Mansion, built in 1887
-                  </h5>
+                  <p>The Manor House Inn was awarded one of the Top 10 Best Inns in the US. It is located in the beautiful tree lined West Street Historic District, one of Bar Harbor's most convenient in town locations. The inn is just a short walk to all village shopping, restaurants and ocean front activities. In addition Acadia National Park is just 1 mile away. Manor House Inn consists of the original three story Victorian Mansion, built in 1887
+                  </p>
                   <hr/>
                   <div class="col 14">
                   <h4 id = "country">Country</h4> 
@@ -1739,14 +1679,8 @@ $this->layout = false;
                   <h5>:Circuit Rd. Building 45, Blk 13 room 32</h5>
                   </div>
                 </div>
-             </div>   
-          <div class="caption center-align">
-             <h4><center>Penthouse Luxury</center></h4>
-             <h5 class="price light grey-text text-lighten-7"><left>$20.00</left></h5>
-             <button data-target="b18" class="waves-effect waves-light btn">Book</button>
-          </div>
-          <!-- Modal m2 -->
-         <div class="modal" id="b18" tabindex="-1" role="dialog" >
+             </div>
+             <div class="modal" id="b18" tabindex="-1" role="dialog" >
               <div class="modal-dialog">
                 <div class="modal-content">
              <!-- Modal Header -->
@@ -1787,17 +1721,21 @@ $this->layout = false;
                     </div>   
                   </div>
              </div>    
-        </div>
-    </div>
-</div> <!-- end modal m2 -->   
-     </div><!-- end of product 18-->
-<!-- 19th unit-->
-     <div class="col 14">
+             </div>
+             </div>
+            </div>
+      </div><!-- 18th item end -->
+
+      <div class="col 14 itembox">
             <div class= "waves-effect waves-block waves-light" data-target="m19">
              <?= $this->Html->image('/units/penthouse lux 2/u1.jpg', ['class'=>'products']) ?>
             </div>
-             <!-- Modal m -->
-             <div id="m19" class="modal">
+            <div class="caption center-align">
+             <h4><center>Penthouse Luxury 2</center></h4>
+             <h5 class="price light grey-text text-lighten-7"><left>$20.00</left></h5>
+             <button data-target="b19" class="waves-effect waves-light btn">Book</button>
+            </div>
+            <div id="m19" class="modal">
                 <div class="modal-content">
                  <h4><center>Condo #1</center></h4>
                   <h5 class="price light grey-text text-lighten-7"><center>$20.00</center></h5>
@@ -1819,8 +1757,8 @@ $this->layout = false;
                    </div>
                    <hr/>
                   <h4>About:</h4>
-                  <h5>The Manor House Inn was awarded one of the Top 10 Best Inns in the US. It is located in the beautiful tree lined West Street Historic District, one of Bar Harbor's most convenient in town locations. The inn is just a short walk to all village shopping, restaurants and ocean front activities. In addition Acadia National Park is just 1 mile away. Manor House Inn consists of the original three story Victorian Mansion, built in 1887
-                  </h5>
+                  <p>The Manor House Inn was awarded one of the Top 10 Best Inns in the US. It is located in the beautiful tree lined West Street Historic District, one of Bar Harbor's most convenient in town locations. The inn is just a short walk to all village shopping, restaurants and ocean front activities. In addition Acadia National Park is just 1 mile away. Manor House Inn consists of the original three story Victorian Mansion, built in 1887
+                  </p>
                   <hr/>
                   <div class="col 14">
                   <h4 id = "country">Country</h4> 
@@ -1831,14 +1769,8 @@ $this->layout = false;
                   <h5>:Circuit Rd. Building 45, Blk 13 room 32</h5>
                   </div>
                 </div>
-             </div>   
-          <div class="caption center-align">
-             <h4><center>Penthouse Luxury 2</center></h4>
-             <h5 class="price light grey-text text-lighten-7"><left>$20.00</left></h5>
-             <button data-target="b19" class="waves-effect waves-light btn">Book</button>
-          </div>
-          <!-- Modal m2 -->
-         <div class="modal" id="b19" tabindex="-1" role="dialog" >
+             </div>
+             <div class="modal" id="b19" tabindex="-1" role="dialog" >
               <div class="modal-dialog">
                 <div class="modal-content">
              <!-- Modal Header -->
@@ -1879,17 +1811,21 @@ $this->layout = false;
                     </div>   
                   </div>
              </div>    
-        </div>
-    </div>
-</div> <!-- end modal m2 -->   
-     </div><!-- end of product 19-->
-<!-- 20th unit-->
-     <div class="col 14">
-            <div class= "waves-effect waves-block waves-light" data-target="m20">
-             <?= $this->Html->image('/units/waterside luxury/u1.jpg', ['class'=>'products']) ?>
+             </div>
             </div>
-             <!-- Modal m -->
-             <div id="m20" class="modal">
+            </div>
+      </div><!-- 19th item end -->
+
+      <div class="col 14 itembox">
+            <div class= "waves-effect waves-block waves-light" data-target="m20">
+              <?= $this->Html->image('/units/waterside luxury/u1.jpg', ['class'=>'products']) ?>
+            </div>
+            <div class="caption center-align">
+             <h4><center>Waterside Luxury</center></h4>
+             <h5 class="price light grey-text text-lighten-7"><left>$20.00</left></h5>
+             <button data-target="b20" class="waves-effect waves-light btn">Book</button>
+            </div>
+            <div id="m20" class="modal">
                 <div class="modal-content">
                  <h4><center>Condo #1</center></h4>
                   <h5 class="price light grey-text text-lighten-7"><center>$20.00</center></h5>
@@ -1911,8 +1847,8 @@ $this->layout = false;
                    </div>
                    <hr/>
                   <h4>About:</h4>
-                  <h5>The Manor House Inn was awarded one of the Top 10 Best Inns in the US. It is located in the beautiful tree lined West Street Historic District, one of Bar Harbor's most convenient in town locations. The inn is just a short walk to all village shopping, restaurants and ocean front activities. In addition Acadia National Park is just 1 mile away. Manor House Inn consists of the original three story Victorian Mansion, built in 1887
-                  </h5>
+                  <p>The Manor House Inn was awarded one of the Top 10 Best Inns in the US. It is located in the beautiful tree lined West Street Historic District, one of Bar Harbor's most convenient in town locations. The inn is just a short walk to all village shopping, restaurants and ocean front activities. In addition Acadia National Park is just 1 mile away. Manor House Inn consists of the original three story Victorian Mansion, built in 1887
+                  </p>
                   <hr/>
                   <div class="col 14">
                   <h4 id = "country">Country</h4> 
@@ -1923,14 +1859,8 @@ $this->layout = false;
                   <h5>:Circuit Rd. Building 45, Blk 13 room 32</h5>
                   </div>
                 </div>
-             </div>   
-          <div class="caption center-align">
-             <h4><center>Waterside Luxury</center></h4>
-             <h5 class="price light grey-text text-lighten-7"><left>$20.00</left></h5>
-             <button data-target="b20" class="waves-effect waves-light btn">Book</button>
-          </div>
-          <!-- Modal m2 -->
-         <div class="modal" id="b20" tabindex="-1" role="dialog" >
+             </div>
+             <div class="modal" id="b20" tabindex="-1" role="dialog" >
               <div class="modal-dialog">
                 <div class="modal-content">
              <!-- Modal Header -->
@@ -1971,61 +1901,33 @@ $this->layout = false;
                     </div>   
                   </div>
              </div>    
-        </div>
-    </div>
-</div> <!-- end modal m2 -->   
-     </div><!-- end of product 20-->
-     </div><!-- end of gridl -->
-     </div><!-- end of units-->
-
-  <hr/>
-  <hr/>
-  <hr/>
+                  </div>
+            </div>
+           </div>
+      </div><!-- 20th item end -->
+ </div><!-- 4th row product row end-->
+</div>
 
 
+
+
+
+
+  
     
-    <div class = "col 14">
-    
+<div class = "col 14 "> 
       <div  class= "waves-effect waves-block waves-light section scrollspy">
                <?= $this->Html->image('6.jpg', ['class'=>'bgimg']) ?> <!-- random image -->
-      <div  id="services" class="middle caption center-align text-lighten-8 section scrollspy">
-
+           <div  id="services" class="middle caption center-align text-lighten-8 section scrollspy">
               <h4><center> Services </center></h4>
               <h1 >COMING SOON</h1>
               <hr>
               <p id="cdtime" style="font-size:30px" ></p>
+            </div>
       </div>
-      </div>
-    </div>  
+</div> 
+
      
-      
-        
-
-      
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   <hr/>
   <hr/>
   <hr/>
@@ -2034,26 +1936,22 @@ $this->layout = false;
   <h4><center> ABOUT US </center></h4>
   <p><center>SOME TEXT HERE ABOUT OUR COMPANY</center></p>
   <h5><center>blahblahblah</center></h5>
-
-
 </div>
 
 <footer class="page-footer">
   <div class="container">
     <div class="row">
       <div class="col l6 s12">
-        <h5 class="white-text">Footer Content</h5>
-        <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+        <h5 class="white-text">Miami Luxry Condos</h5>
+        <h7><a href = "https://twitter.com/mlcstays" target="_blank">@mlcstays</a></h7>
+        <p class="grey-text text-lighten-4">We provide 24/7 bookings and assistance for those who wanted a Miami Luxury vacation. Call us at +1 (800) 804-2316 extension 102 or visit the link below</p>
+        <li><a class="grey-text text-lighten-3" href="https://twitter.com/search?q=place%3A04cb31bae3b3af93" target="_blank">Miami, fl</a></li>
+        <li><a class="grey-text text-lighten-3" href="https://t.co/FTkow7oNPa" target="_blank">airbnb.com</a></li>
       </div>
-      <div class="col l4 offset-l2 s12">
-        <h5 class="white-text">Links</h5>
-        <ul>
-          <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-          <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-          <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
-          <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
-        </ul>
-      </div>
+   <!--   <div class="col l4 offset-l2 s12">  -->
+       
+          
+       
     </div>
   </div>
   <div class="footer-copyright">
