@@ -141,11 +141,15 @@ $this->layout = false;
    <hr/>
   </div>
 
-<div class = "productgrid col 14" >      
-  <div class="row"> <!-- 5 per line-->
-
-   <div class="col 14 itembox">
-    <div class= "waves-effect waves-block waves-light" data-target="m1">
+ <div class ="productgrid">
+           <div class = "col s12 m12 l12 section scrollspy" id = "units"><center>
+                <h3> Units </h3>
+                </center>
+           </div>
+  <div class="row"> <!-- 4 per line-->
+  
+   <div class="col s3 m3 l3  itembox">
+    <div class= "waves-effect waves-block waves-light home-sec1-about-img" data-target="m1">
          <?= $this->Html->image('/units/bayside miami 1/u1.jpg', ['class'=>'products']) ?>
     </div>
     <div class="caption center-align">
@@ -153,7 +157,7 @@ $this->layout = false;
           <h5 class="price light grey-text text-lighten-7"><left>$20.00</left></h5>
           <button data-target="b1" class="waves-effect waves-light btn">Book</button>
     </div>  
-    <div id="m1" class="modal ">
+    <div id="m1" class="modal">
                 <div class="modal-content">
                  <h4><center>Bayside Miami 1</center></h4>
                   <h5 class="price light grey-text text-lighten-7"><center>$20.00</center></h5>
@@ -178,62 +182,20 @@ $this->layout = false;
                   <p>The Manor House Inn was awarded one of the Top 10 Best Inns in the US. It is located in the beautiful tree lined West Street Historic District, one of Bar Harbor's most convenient in town locations. The inn is just a short walk to all village shopping, restaurants and ocean front activities. In addition Acadia National Park is just 1 mile away. Manor House Inn consists of the original three story Victorian Mansion, built in 1887
                   </p>
                   <hr/>
-                      <div class="col 14">
+                    <div class="col s3 m3 l3">
                           <h4 id = "country">Country</h4> 
                           <h4>Address</h4>
-                      </div>
-                    <div class="col 14">
+                    </div>
+                    <div class="col s6">
                        <h4>:Singapore</h4>
                        <h5>:Circuit Rd. Building 45, Blk 13 room 32</h5>
                     </div>
                 </div>
-             </div>
-            <div class="modal" id="b1" tabindex="-1" role="dialog" >
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h2 id="Productlabel"><center>1(Condo)</center></h2>
-                    <hr/>
-                  </div>
-             <div class="modal-body">
-                    <!-- Product info -->
-                  <div  class = "col 14" id = "details">
-                    <h3>Details:</h3>
-                    <div class="col 14">
-                       <h4>Beds</h4>   
-                       <h4>Nightly Rate</h4>
-                       <hr/>
-                    <h4>Also Available</h4>
-                    <div class="col 14">
-                         <h5>:Jetski </h5>
-                         <h5>:Gym    </h5>
-                         <h5>:CarPark</h5>
-                        <btn type="close" class="btn waves-effect waves-light" 
-                        data-dismiss="modal.close">Cancel</btn> <!--closing ng modal fixe-->
-                       <h5></h5>
-                    </div>
-                    <div class="col 14">
-                         <h5> = $5.00</h5>
-                         <h5> = $0.00</h5>
-                         <h5> = $0.00</h5>
-                         <a href = "#">
-                          <btn class="btn waves-effect waves-light" >Continue</btn> <!--closing ng modal fixe-->
-                         </a> 
-                    </div>
-                    </div>
-                    <div class="col 14">
-                       <h4 id = "bedcount">:2 Master Beds</h4>
-                       <h4 id = "productrate">:$20.00</h4>
-                    </div>
-                  </div>
-             </div>
-        </div>
-      </div>
-    </div>    
+             </div>    
    </div> <!-- 1st item end -->
 
-   <div class="col 14 itembox">
-   <div class= "waves-effect waves-block waves-light" data-target="m2">
+   <div class="col s3 m3 l3 itembox">
+   <div class= "waves-effect waves-block waves-light home-sec1-about-img" data-target="m2">
              <?= $this->Html->image('/units/bayside miami 2/u1.jpg', ['class'=>'products']) ?>
     </div>
           <div class="caption center-align">
@@ -266,63 +228,22 @@ $this->layout = false;
                   <p>The Manor House Inn was awarded one of the Top 10 Best Inns in the US. It is located in the beautiful tree lined West Street Historic District, one of Bar Harbor's most convenient in town locations. The inn is just a short walk to all village shopping, restaurants and ocean front activities. In addition Acadia National Park is just 1 mile away. Manor House Inn consists of the original three story Victorian Mansion, built in 1887
                   </p>
                   <hr/>
-                  <div class="col 14">
-                  <h4 id = "country">Country</h4> 
-                  <h4>Address</h4>
-                  </div>
-                  <div class="col 14">
-                  <h4>:Singapore</h4>
-                  <h5>:Circuit Rd. Building 45, Blk 13 room 32</h5>
-                  </div>
+                <div class="col s3 m3 l3">
+                          <h4 id = "country">Country</h4> 
+                          <h4>Address</h4>
+                    </div>
+                    <div class="col s6">
+                       <h4>:Singapore</h4>
+                       <h5>:Circuit Rd. Building 45, Blk 13 room 32</h5>
+                    </div>
                 </div>
              </div>   
           <!-- Modal m2 -->
-         <div class="modal" id="b2" tabindex="-1" role="dialog" >
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h2 id="Productlabel"><center>1(Condo)</center></h2>
-                    <hr/>
-                  </div>  
-             <div class="modal-body">
-                    <!-- Product info -->
-                  <div  class = "col 14" id = "details">
-                    <h3>Details:</h3>
-                    <div class="col 14">
-                       <h4>Beds</h4>   
-                       <h4>Nightly Rate</h4>
-                       <hr/>
-                    <h4>Also Available</h4>
-                    <div class="col 14">
-                         <h5>:Jetski </h5>
-                         <h5>:Gym    </h5>
-                         <h5>:CarPark</h5>
-                        <btn type="close" class="btn waves-effect waves-light" 
-                        data-dismiss="modal.close">Cancel</btn> <!--closing ng modal fixe-->
-                       <h5></h5>
-                    </div>
-                    <div class="col 14">
-                         <h5> = $5.00</h5>
-                         <h5> = $0.00</h5>
-                         <h5> = $0.00</h5>
-                         <a href = "#">
-                          <btn class="btn waves-effect waves-light" >Continue</btn> <!--closing ng modal fixe-->
-                         </a> 
-                    </div>
-                    </div>
-                    <div class="col 14">
-                       <h4 id = "bedcount">:2 Master Beds</h4>
-                       <h4 id = "productrate">:$20.00</h4>
-                    </div>   
-                  </div>
-             </div>    
-        </div>
-       </div>
-      </div>   
+         
    </div><!-- 2nd item end -->
 
-   <div class="col 14 itembox">
-        <div class= "waves-effect waves-block waves-light" data-target="m3">
+   <div class="col s3 m3 l3 itembox">
+        <div class= "waves-effect waves-block waves-light home-sec1-about-img" data-target="m3">
              <?= $this->Html->image('/units/bayside miami 3/u1.jpg', ['class'=>'products']) ?>
         </div>
         <div class="caption center-align">
@@ -355,62 +276,20 @@ $this->layout = false;
                   <p>The Manor House Inn was awarded one of the Top 10 Best Inns in the US. It is located in the beautiful tree lined West Street Historic District, one of Bar Harbor's most convenient in town locations. The inn is just a short walk to all village shopping, restaurants and ocean front activities. In addition Acadia National Park is just 1 mile away. Manor House Inn consists of the original three story Victorian Mansion, built in 1887
                   </p>
                   <hr/>
-                  <div class="col 14">
-                  <h4 id = "country">Country</h4> 
-                  <h4>Address</h4>
-                  </div>
-                  <div class="col 14">
-                  <h4>:Singapore</h4>
-                  <h5>:Circuit Rd. Building 45, Blk 13 room 32</h5>
-                  </div>
+<div class="col s3 m3 l3">
+                          <h4 id = "country">Country</h4> 
+                          <h4>Address</h4>
+                    </div>
+                    <div class="col s6">
+                       <h4>:Singapore</h4>
+                       <h5>:Circuit Rd. Building 45, Blk 13 room 32</h5>
+                    </div>
                 </div>
              </div>
-          <div class="modal" id="b3" tabindex="-1" role="dialog" >
-             <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h2 id="Productlabel"><center>1(Condo)</center></h2>
-                    <hr/>
-                  </div>
-             <div class="modal-body">
-                    <!-- Product info -->
-                  <div  class = "col 14" id = "details">
-                    <h3>Details:</h3>
-                    <div class="col 14">
-                       <h4>Beds</h4>   
-                       <h4>Nightly Rate</h4>
-                       <hr/>
-                    <h4>Also Available</h4>
-                    <div class="col 14">
-                         <h5>:Jetski </h5>
-                         <h5>:Gym    </h5>
-                         <h5>:CarPark</h5>
-                        <btn type="close" class="btn waves-effect waves-light" 
-                        data-dismiss="modal.close">Cancel</btn> <!--closing ng modal fixe-->
-                       <h5></h5>
-                    </div>
-                    <div class="col 14">
-                         <h5> = $5.00</h5>
-                         <h5> = $0.00</h5>
-                         <h5> = $0.00</h5>
-                         <a href = "#">
-                          <btn class="btn waves-effect waves-light" >Continue</btn> <!--closing ng modal fixe-->
-                         </a> 
-                    </div>
-                    </div>
-                    <div class="col 14">
-                       <h4 id = "bedcount">:2 Master Beds</h4>
-                       <h4 id = "productrate">:$20.00</h4>
-                    </div>   
-                  </div>
-             </div>    
-        </div>
-       </div>
-       </div>
    </div><!-- 3rd item end -->
 
-   <div class="col 14 itembox">
-      <div class= "waves-effect waves-block waves-light" data-target="m4">
+   <div class="col s3 m3 l3 itembox">
+      <div class= "waves-effect waves-block waves-light home-sec1-about-img" data-target="m4">
              <?= $this->Html->image('/units/downtown miami lux/u1.jpg', ['class'=>'products']) ?>
       </div>
       <div class="caption center-align">
@@ -440,62 +319,22 @@ $this->layout = false;
                   <p>The Manor House Inn was awarded one of the Top 10 Best Inns in the US. It is located in the beautiful tree lined West Street Historic District, one of Bar Harbor's most convenient in town locations. The inn is just a short walk to all village shopping, restaurants and ocean front activities. In addition Acadia National Park is just 1 mile away. Manor House Inn consists of the original three story Victorian Mansion, built in 1887
                   </p>
                   <hr/>
-                  <div class="col 14">
-                  <h4 id = "country">Country</h4> 
-                  <h4>Address</h4>
-                  </div>
-                  <div class="col 14">
-                  <h4>:Singapore</h4>
-                  <h5>:Circuit Rd. Building 45, Blk 13 room 32</h5>
-                  </div>
+<div class="col s3 m3 l3">
+                          <h4 id = "country">Country</h4> 
+                          <h4>Address</h4>
+                    </div>
+                    <div class="col s6">
+                       <h4>:Singapore</h4>
+                       <h5>:Circuit Rd. Building 45, Blk 13 room 32</h5>
+                    </div>
                 </div>
         </div>
-        <div class="modal" id="b4" tabindex="-1" role="dialog" >
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h2 id="Productlabel"><center>1(Condo)</center></h2>
-                    <hr/>
-                  </div>
-             <div class="modal-body">
-                    <!-- Product info -->
-                  <div  class = "col 14" id = "details">
-                    <h3>Details:</h3>
-                    <div class="col 14">
-                       <h4>Beds</h4>   
-                       <h4>Nightly Rate</h4>
-                       <hr/>
-                    <h4>Also Available</h4>
-                    <div class="col 14">
-                         <h5>:Jetski </h5>
-                         <h5>:Gym    </h5>
-                         <h5>:CarPark</h5>
-                        <btn type="close" class="btn waves-effect waves-light" 
-                        data-dismiss="modal.close">Cancel</btn> <!--closing ng modal fixe-->
-                       <h5></h5>
-                    </div>
-                    <div class="col 14">
-                         <h5> = $5.00</h5>
-                         <h5> = $0.00</h5>
-                         <h5> = $0.00</h5>
-                         <a href = "#">
-                          <btn class="btn waves-effect waves-light" >Continue</btn> <!--closing ng modal fixe-->
-                         </a> 
-                    </div>
-                    </div>
-                    <div class="col 14">
-                       <h4 id = "bedcount">:2 Master Beds</h4>
-                       <h4 id = "productrate">:$20.00</h4>
-                    </div>   
-                  </div>
-             </div>    
-        </div>
-       </div>
-      </div>
+        
    </div><!-- 4th item end -->
- 
-   <div class="col 14 itembox">
-     <div class= "waves-effect waves-block waves-light" data-target="m5">
+</div>   
+ <div class="row">
+   <div class="col s3 m3 l3 itembox">
+     <div class= "waves-effect waves-block waves-light home-sec1-about-img" data-target="m5">
              <?= $this->Html->image('/units/havana luxury 1/u1.jpg', ['class'=>'products']) ?>
      </div>
      <div class="caption center-align">
@@ -527,64 +366,20 @@ $this->layout = false;
                   <p>The Manor House Inn was awarded one of the Top 10 Best Inns in the US. It is located in the beautiful tree lined West Street Historic District, one of Bar Harbor's most convenient in town locations. The inn is just a short walk to all village shopping, restaurants and ocean front activities. In addition Acadia National Park is just 1 mile away. Manor House Inn consists of the original three story Victorian Mansion, built in 1887
                   </p>
                   <hr/>
-                  <div class="col 14">
-                  <h4 id = "country">Country</h4> 
-                  <h4>Address</h4>
-                  </div>
-                  <div class="col 14">
-                  <h4>:Singapore</h4>
-                  <h5>:Circuit Rd. Building 45, Blk 13 room 32</h5>
-                  </div>
+                    <div class="col s3 m3 l3">
+                          <h4 id = "country">Country</h4> 
+                          <h4>Address</h4>
+                    </div>
+                    <div class="col s6">
+                       <h4>:Singapore</h4>
+                       <h5>:Circuit Rd. Building 45, Blk 13 room 32</h5>
+                    </div>
                 </div>
       </div>
-      <div class="modal" id="b5" tabindex="-1" role="dialog" >
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h2 id="Productlabel"><center>1(Condo)</center></h2>
-                    <hr/>
-                  </div>
-             <div class="modal-body">
-                    <!-- Product info -->
-                  <div  class = "col 14" id = "details">
-                    <h3>Details:</h3>
-                    <div class="col 14">
-                       <h4>Beds</h4>   
-                       <h4>Nightly Rate</h4>
-                       <hr/>
-                    <h4>Also Available</h4>
-                    <div class="col 14">
-                         <h5>:Jetski </h5>
-                         <h5>:Gym    </h5>
-                         <h5>:CarPark</h5>
-                        <btn type="close" class="btn waves-effect waves-light" 
-                        data-dismiss="modal.close">Cancel</btn> <!--closing ng modal fixe-->
-                       <h5></h5>
-                    </div>
-                    <div class="col 14">
-                         <h5> = $5.00</h5>
-                         <h5> = $0.00</h5>
-                         <h5> = $0.00</h5>
-                         <a href = "#">
-                          <btn class="btn waves-effect waves-light" >Continue</btn> <!--closing ng modal fixe-->
-                         </a> 
-                    </div>
-                    </div>
-                    <div class="col 14">
-                       <h4 id = "bedcount">:2 Master Beds</h4>
-                       <h4 id = "productrate">:$20.00</h4>
-                    </div>   
-                  </div>
-             </div>    
-        </div>
-       </div>
-       </div>
+      
    </div><!-- 5th item end -->
 
-  </div><!-- 1st row product row end-->
-
- <div class="row"> <!-- 5 per line-->
-      <div class="col 14 itembox">
+      <div class="col s3 m3 l3 itembox">
             <div class= "waves-effect waves-block waves-light" data-target="m6">
              <?= $this->Html->image('/units/havana luxury 2/u1.jpg', ['class'=>'products']) ?>
             </div>
@@ -615,63 +410,20 @@ $this->layout = false;
                   <p>The Manor House Inn was awarded one of the Top 10 Best Inns in the US. It is located in the beautiful tree lined West Street Historic District, one of Bar Harbor's most convenient in town locations. The inn is just a short walk to all village shopping, restaurants and ocean front activities. In addition Acadia National Park is just 1 mile away. Manor House Inn consists of the original three story Victorian Mansion, built in 1887
                   </p>
                   <hr/>
-                  <div class="col 14">
-                  <h4 id = "country">Country</h4> 
-                  <h4>Address</h4>
-                  </div>
-                  <div class="col 14">
-                  <h4>:Singapore</h4>
-                  <h5>:Circuit Rd. Building 45, Blk 13 room 32</h5>
-                  </div>
+<div class="col s3 m3 l3">
+                          <h4 id = "country">Country</h4> 
+                          <h4>Address</h4>
+                    </div>
+                    <div class="col s6">
+                       <h4>:Singapore</h4>
+                       <h5>:Circuit Rd. Building 45, Blk 13 room 32</h5>
+                    </div>
                 </div>
              </div>
-             <div class="modal" id="b6" tabindex="-1" role="dialog" >
-              <div class="modal-dialog">
-                <div class="modal-content">
-             <!-- Modal Header -->
-                  <div class="modal-header">
-                    <h2 id="Productlabel"><center>1(Condo)</center></h2>
-                    <hr/>
-                  </div>  
-            <!-- Modal Body -->
-             <div class="modal-body">
-                    <!-- Product info -->
-                  <div  class = "col 14" id = "details">
-                    <h3>Details:</h3>
-                    <div class="col 14">
-                       <h4>Beds</h4>   
-                       <h4>Nightly Rate</h4>
-                       <hr/>
-                    <h4>Also Available</h4>
-                    <div class="col 14">
-                         <h5>:Jetski </h5>
-                         <h5>:Gym    </h5>
-                         <h5>:CarPark</h5>
-                        <btn type="close" class="btn waves-effect waves-light" 
-                        data-dismiss="modal.close">Cancel</btn> <!--closing ng modal fixe-->
-                       <h5></h5>
-                    </div>
-                    <div class="col 14">
-                         <h5> = $5.00</h5>
-                         <h5> = $0.00</h5>
-                         <h5> = $0.00</h5>
-                         <a href = "#">
-                          <btn class="btn waves-effect waves-light" >Continue</btn> <!--closing ng modal fixe-->
-                         </a> 
-                    </div>
-                    </div>
-                    <div class="col 14">
-                       <h4 id = "bedcount">:2 Master Beds</h4>
-                       <h4 id = "productrate">:$20.00</h4>
-                    </div>   
-                  </div>
-             </div>    
-            </div>
-            </div>
-           </div>
+             
       </div><!-- 6th item end -->
 
-      <div class="col 14 itembox">
+      <div class="col s3 m3 l3 itembox">
            <div class= "waves-effect waves-block waves-light" data-target="m7">
              <?= $this->Html->image('/units/havana luxury 3/u1.jpg', ['class'=>'products']) ?>
            </div>
@@ -705,70 +457,27 @@ $this->layout = false;
                   <p>The Manor House Inn was awarded one of the Top 10 Best Inns in the US. It is located in the beautiful tree lined West Street Historic District, one of Bar Harbor's most convenient in town locations. The inn is just a short walk to all village shopping, restaurants and ocean front activities. In addition Acadia National Park is just 1 mile away. Manor House Inn consists of the original three story Victorian Mansion, built in 1887
                   </p>
                   <hr/>
-                  <div class="col 14">
-                  <h4 id = "country">Country</h4> 
-                  <h4>Address</h4>
-                  </div>
-                  <div class="col 14">
-                  <h4>:Singapore</h4>
-                  <h5>:Circuit Rd. Building 45, Blk 13 room 32</h5>
-                  </div>
+<div class="col s3 m3 l3">
+                          <h4 id = "country">Country</h4> 
+                          <h4>Address</h4>
+                    </div>
+                    <div class="col s6">
+                       <h4>:Singapore</h4>
+                       <h5>:Circuit Rd. Building 45, Blk 13 room 32</h5>
+                    </div>
                 </div>
              </div>
-             <div class="modal" id="b7" tabindex="-1" role="dialog" >
-              <div class="modal-dialog">
-                <div class="modal-content">
-             <!-- Modal Header -->
-                  <div class="modal-header">
-                    <h2 id="Productlabel"><center>1(Condo)</center></h2>
-                    <hr/>
-                  </div>  
-            <!-- Modal Body -->
-             <div class="modal-body">
-                    <!-- Product info -->
-                  <div  class = "col 14" id = "details">
-                    <h3>Details:</h3>
-                    <div class="col 14">
-                       <h4>Beds</h4>   
-                       <h4>Nightly Rate</h4>
-                       <hr/>
-                    <h4>Also Available</h4>
-                    <div class="col 14">
-                         <h5>:Jetski </h5>
-                         <h5>:Gym    </h5>
-                         <h5>:CarPark</h5>
-                        <btn type="close" class="btn waves-effect waves-light" 
-                        data-dismiss="modal.close">Cancel</btn> <!--closing ng modal fixe-->
-                       <h5></h5>
-                    </div>
-                    <div class="col 14">
-                         <h5> = $5.00</h5>
-                         <h5> = $0.00</h5>
-                         <h5> = $0.00</h5>
-                         <a href = "#">
-                          <btn class="btn waves-effect waves-light" >Continue</btn> <!--closing ng modal fixe-->
-                         </a> 
-                    </div>
-                    </div>
-                    <div class="col 14">
-                       <h4 id = "bedcount">:2 Master Beds</h4>
-                       <h4 id = "productrate">:$20.00</h4>
-                    </div>   
-                  </div>
-             </div>    
-               </div>
-             </div>
-           </div>
+             
       </div><!-- 7th item end -->
 
-      <div class="col 14 itembox">
+      <div class="col s3 m3 l3 itembox">  <!-- 1br-->
            <div class= "waves-effect waves-block waves-light" data-target="m7">
              <?= $this->Html->image('/units/havana luxury1BR/u1.jpg', ['class'=>'products']) ?>
             </div>
             <div class="caption center-align">
-             <h4><center>Havana luxury(1Br)</center></h4>
+             <h4><center>Havana luxury</center></h4> <!-- 1br-->
              <h5 class="price light grey-text text-lighten-7"><left>$20.00</left></h5>
-             <button data-target="b8" class="waves-effect waves-light btn">Book</button>
+             <button data-target="b8" class="waves-effect waves-light btn">Book</button> <!-- 1br-->
             </div>
             <div id="m8" class="modal">
                 <div class="modal-content">
@@ -787,63 +496,21 @@ $this->layout = false;
                   <p>The Manor House Inn was awarded one of the Top 10 Best Inns in the US. It is located in the beautiful tree lined West Street Historic District, one of Bar Harbor's most convenient in town locations. The inn is just a short walk to all village shopping, restaurants and ocean front activities. In addition Acadia National Park is just 1 mile away. Manor House Inn consists of the original three story Victorian Mansion, built in 1887
                   </p>
                   <hr/>
-                  <div class="col 14">
-                  <h4 id = "country">Country</h4> 
-                  <h4>Address</h4>
-                  </div>
-                  <div class="col 14">
-                  <h4>:Singapore</h4>
-                  <h5>:Circuit Rd. Building 45, Blk 13 room 32</h5>
-                  </div>
+<div class="col s3 m3 l3">
+                          <h4 id = "country">Country</h4> 
+                          <h4>Address</h4>
+                    </div>
+                    <div class="col s6">
+                       <h4>:Singapore</h4>
+                       <h5>:Circuit Rd. Building 45, Blk 13 room 32</h5>
+                    </div>
                 </div>
              </div>
-             <div class="modal" id="b8" tabindex="-1" role="dialog" >
-              <div class="modal-dialog">
-                <div class="modal-content">
-             <!-- Modal Header -->
-                  <div class="modal-header">
-                    <h2 id="Productlabel"><center>1(Condo)</center></h2>
-                    <hr/>
-                  </div>  
-            <!-- Modal Body -->
-             <div class="modal-body">
-                    <!-- Product info -->
-                  <div  class = "col 14" id = "details">
-                    <h3>Details:</h3>
-                    <div class="col 14">
-                       <h4>Beds</h4>   
-                       <h4>Nightly Rate</h4>
-                       <hr/>
-                    <h4>Also Available</h4>
-                    <div class="col 14">
-                         <h5>:Jetski </h5>
-                         <h5>:Gym    </h5>
-                         <h5>:CarPark</h5>
-                        <btn type="close" class="btn waves-effect waves-light" 
-                        data-dismiss="modal.close">Cancel</btn> <!--closing ng modal fixe-->
-                       <h5></h5>
-                    </div>
-                    <div class="col 14">
-                         <h5> = $5.00</h5>
-                         <h5> = $0.00</h5>
-                         <h5> = $0.00</h5>
-                         <a href = "#">
-                          <btn class="btn waves-effect waves-light" >Continue</btn> <!--closing ng modal fixe-->
-                         </a> 
-                    </div>
-                    </div>
-                    <div class="col 14">
-                       <h4 id = "bedcount">:2 Master Beds</h4>
-                       <h4 id = "productrate">:$20.00</h4>
-                    </div>   
-                  </div>
-             </div>    
-               </div>
-             </div>
-            </div>
-      </div><!-- 8th item end -->
-
-      <div class="col 14 itembox">
+             
+      </div><!-- 8th item end --> <!-- 1br-->
+</div>      
+<div class="row">
+      <div class="col s3 m3 l3 itembox">
           <div class= "waves-effect waves-block waves-light" data-target="m9">
              <?= $this->Html->image('/units/high rise miami/u1.jpg', ['class'=>'products']) ?>
           </div>
@@ -877,63 +544,20 @@ $this->layout = false;
                   <p>The Manor House Inn was awarded one of the Top 10 Best Inns in the US. It is located in the beautiful tree lined West Street Historic District, one of Bar Harbor's most convenient in town locations. The inn is just a short walk to all village shopping, restaurants and ocean front activities. In addition Acadia National Park is just 1 mile away. Manor House Inn consists of the original three story Victorian Mansion, built in 1887
                   </p>
                   <hr/>
-                  <div class="col 14">
-                  <h4 id = "country">Country</h4> 
-                  <h4>Address</h4>
-                  </div>
-                  <div class="col 14">
-                  <h4>:Singapore</h4>
-                  <h5>:Circuit Rd. Building 45, Blk 13 room 32</h5>
-                  </div>
+<div class="col s3 m3 l3">
+                          <h4 id = "country">Country</h4> 
+                          <h4>Address</h4>
+                    </div>
+                    <div class="col s6">
+                       <h4>:Singapore</h4>
+                       <h5>:Circuit Rd. Building 45, Blk 13 room 32</h5>
+                    </div>
                 </div>
              </div>
-             <div class="modal" id="b9" tabindex="-1" role="dialog" >
-              <div class="modal-dialog">
-                <div class="modal-content">
-             <!-- Modal Header -->
-                  <div class="modal-header">
-                    <h2 id="Productlabel"><center>1(Condo)</center></h2>
-                    <hr/>
-                  </div>  
-            <!-- Modal Body -->
-             <div class="modal-body">
-                    <!-- Product info -->
-                  <div  class = "col 14" id = "details">
-                    <h3>Details:</h3>
-                    <div class="col 14">
-                       <h4>Beds</h4>   
-                       <h4>Nightly Rate</h4>
-                       <hr/>
-                    <h4>Also Available</h4>
-                    <div class="col 14">
-                         <h5>:Jetski </h5>
-                         <h5>:Gym    </h5>
-                         <h5>:CarPark</h5>
-                        <btn type="close" class="btn waves-effect waves-light" 
-                        data-dismiss="modal.close">Cancel</btn> <!--closing ng modal fixe-->
-                       <h5></h5>
-                    </div>
-                    <div class="col 14">
-                         <h5> = $5.00</h5>
-                         <h5> = $0.00</h5>
-                         <h5> = $0.00</h5>
-                         <a href = "#">
-                          <btn class="btn waves-effect waves-light" >Continue</btn> <!--closing ng modal fixe-->
-                         </a> 
-                    </div>
-                    </div>
-                    <div class="col 14">
-                       <h4 id = "bedcount">:2 Master Beds</h4>
-                       <h4 id = "productrate">:$20.00</h4>
-                    </div>   
-                  </div>
-             </div>    
-              </div>
-          </div>
-         </div>
+             
       </div><!-- 9th item end -->
 
-      <div class="col 14 itembox">
+      <div class="col s3 m3 l3 itembox">
           <div class= "waves-effect waves-block waves-light" data-target="m10">
              <?= $this->Html->image('/units/high rise miami 2/u1.jpg', ['class'=>'products']) ?>
           </div>
@@ -964,65 +588,21 @@ $this->layout = false;
                   <p>The Manor House Inn was awarded one of the Top 10 Best Inns in the US. It is located in the beautiful tree lined West Street Historic District, one of Bar Harbor's most convenient in town locations. The inn is just a short walk to all village shopping, restaurants and ocean front activities. In addition Acadia National Park is just 1 mile away. Manor House Inn consists of the original three story Victorian Mansion, built in 1887
                   </p>
                   <hr/>
-                  <div class="col 14">
-                  <h4 id = "country">Country</h4> 
-                  <h4>Address</h4>
-                  </div>
-                  <div class="col 14">
-                  <h4>:Singapore</h4>
-                  <h5>:Circuit Rd. Building 45, Blk 13 room 32</h5>
-                  </div>
+<div class="col s3 m3 l3">
+                          <h4 id = "country">Country</h4> 
+                          <h4>Address</h4>
+                    </div>
+                    <div class="col s6">
+                       <h4>:Singapore</h4>
+                       <h5>:Circuit Rd. Building 45, Blk 13 room 32</h5>
+                    </div>
                 </div>
              </div>
-             <div class="modal" id="b10" tabindex="-1" role="dialog" >
-              <div class="modal-dialog">
-                <div class="modal-content">
-             <!-- Modal Header -->
-                  <div class="modal-header">
-                    <h2 id="Productlabel"><center>1(Condo)</center></h2>
-                    <hr/>
-                  </div>  
-            <!-- Modal Body -->
-             <div class="modal-body">
-                    <!-- Product info -->
-                  <div  class = "col 14" id = "details">
-                    <h3>Details:</h3>
-                    <div class="col 14">
-                       <h4>Beds</h4>   
-                       <h4>Nightly Rate</h4>
-                       <hr/>
-                    <h4>Also Available</h4>
-                    <div class="col 14">
-                         <h5>:Jetski </h5>
-                         <h5>:Gym    </h5>
-                         <h5>:CarPark</h5>
-                        <btn type="close" class="btn waves-effect waves-light" 
-                        data-dismiss="modal.close">Cancel</btn> <!--closing ng modal fixe-->
-                       <h5></h5>
-                    </div>
-                    <div class="col 14">
-                         <h5> = $5.00</h5>
-                         <h5> = $0.00</h5>
-                         <h5> = $0.00</h5>
-                         <a href = "#">
-                          <btn class="btn waves-effect waves-light" >Continue</btn> <!--closing ng modal fixe-->
-                         </a> 
-                    </div>
-                    </div>
-                    <div class="col 14">
-                       <h4 id = "bedcount">:2 Master Beds</h4>
-                       <h4 id = "productrate">:$20.00</h4>
-                    </div>   
-                  </div>
-                    </div>    
-              </div>
-            </div>
-         </div>
+             
       </div><!-- 10th item end -->
- </div><!-- 2nd row product row end-->
 
- <div class="row"> <!-- 5 per line-->
-      <div class="col 14 itembox">
+
+      <div class="col s3 m3 l3 itembox">
             <div class= "waves-effect waves-block waves-light" data-target="m11">
              <?= $this->Html->image('/units/high rise miami 3/u1.jpg', ['class'=>'products']) ?>
             </div>
@@ -1056,63 +636,20 @@ $this->layout = false;
                   <p>The Manor House Inn was awarded one of the Top 10 Best Inns in the US. It is located in the beautiful tree lined West Street Historic District, one of Bar Harbor's most convenient in town locations. The inn is just a short walk to all village shopping, restaurants and ocean front activities. In addition Acadia National Park is just 1 mile away. Manor House Inn consists of the original three story Victorian Mansion, built in 1887
                   </p>
                   <hr/>
-                  <div class="col 14">
-                  <h4 id = "country">Country</h4> 
-                  <h4>Address</h4>
-                  </div>
-                  <div class="col 14">
-                  <h4>:Singapore</h4>
-                  <h5>:Circuit Rd. Building 45, Blk 13 room 32</h5>
-                  </div>
+<div class="col s3 m3 l3">
+                          <h4 id = "country">Country</h4> 
+                          <h4>Address</h4>
+                    </div>
+                    <div class="col s6">
+                       <h4>:Singapore</h4>
+                       <h5>:Circuit Rd. Building 45, Blk 13 room 32</h5>
+                    </div>
                 </div>
              </div>
-             <div class="modal" id="b11" tabindex="-1" role="dialog" >
-              <div class="modal-dialog">
-                <div class="modal-content">
-             <!-- Modal Header -->
-                  <div class="modal-header">
-                    <h2 id="Productlabel"><center>1(Condo)</center></h2>
-                    <hr/>
-                  </div>  
-            <!-- Modal Body -->
-             <div class="modal-body">
-                    <!-- Product info -->
-                  <div  class = "col 14" id = "details">
-                    <h3>Details:</h3>
-                    <div class="col 14">
-                       <h4>Beds</h4>   
-                       <h4>Nightly Rate</h4>
-                       <hr/>
-                    <h4>Also Available</h4>
-                    <div class="col 14">
-                         <h5>:Jetski </h5>
-                         <h5>:Gym    </h5>
-                         <h5>:CarPark</h5>
-                        <btn type="close" class="btn waves-effect waves-light" 
-                        data-dismiss="modal.close">Cancel</btn> <!--closing ng modal fixe-->
-                       <h5></h5>
-                    </div>
-                    <div class="col 14">
-                         <h5> = $5.00</h5>
-                         <h5> = $0.00</h5>
-                         <h5> = $0.00</h5>
-                         <a href = "#">
-                          <btn class="btn waves-effect waves-light" >Continue</btn> <!--closing ng modal fixe-->
-                         </a> 
-                    </div>
-                    </div>
-                    <div class="col 14">
-                       <h4 id = "bedcount">:2 Master Beds</h4>
-                       <h4 id = "productrate">:$20.00</h4>
-                    </div>   
-                  </div>
-             </div>    
-              </div>
-            </div>
-           </div>
+             
       </div><!-- 11th item end -->
 
-      <div class="col 14 itembox">
+      <div class="col s3 m3 l3 itembox">
           <div class= "waves-effect waves-block waves-light" data-target="m12">
              <?= $this->Html->image('/units/luxury center havana/u1.jpg', ['class'=>'products']) ?>
           </div>
@@ -1146,71 +683,29 @@ $this->layout = false;
                   <p>The Manor House Inn was awarded one of the Top 10 Best Inns in the US. It is located in the beautiful tree lined West Street Historic District, one of Bar Harbor's most convenient in town locations. The inn is just a short walk to all village shopping, restaurants and ocean front activities. In addition Acadia National Park is just 1 mile away. Manor House Inn consists of the original three story Victorian Mansion, built in 1887
                   </p>
                   <hr/>
-                  <div class="col 14">
-                  <h4 id = "country">Country</h4> 
-                  <h4>Address</h4>
-                  </div>
-                  <div class="col 14">
-                  <h4>:Singapore</h4>
-                  <h5>:Circuit Rd. Building 45, Blk 13 room 32</h5>
-                  </div>
+<div class="col s3 m3 l3">
+                          <h4 id = "country">Country</h4> 
+                          <h4>Address</h4>
+                    </div>
+                    <div class="col s6">
+                       <h4>:Singapore</h4>
+                       <h5>:Circuit Rd. Building 45, Blk 13 room 32</h5>
+                    </div>
                 </div>
              </div>
-             <div class="modal" id="b12" tabindex="-1" role="dialog" >
-              <div class="modal-dialog">
-                <div class="modal-content">
-             <!-- Modal Header -->
-                  <div class="modal-header">
-                    <h2 id="Productlabel"><center>1(Condo)</center></h2>
-                    <hr/>
-                  </div>  
-            <!-- Modal Body -->
-             <div class="modal-body">
-                    <!-- Product info -->
-                  <div  class = "col 14" id = "details">
-                    <h3>Details:</h3>
-                    <div class="col 14">
-                       <h4>Beds</h4>   
-                       <h4>Nightly Rate</h4>
-                       <hr/>
-                    <h4>Also Available</h4>
-                    <div class="col 14">
-                         <h5>:Jetski </h5>
-                         <h5>:Gym    </h5>
-                         <h5>:CarPark</h5>
-                        <btn type="close" class="btn waves-effect waves-light" 
-                        data-dismiss="modal.close">Cancel</btn> <!--closing ng modal fixe-->
-                       <h5></h5>
-                    </div>
-                    <div class="col 14">
-                         <h5> = $5.00</h5>
-                         <h5> = $0.00</h5>
-                         <h5> = $0.00</h5>
-                         <a href = "#">
-                          <btn class="btn waves-effect waves-light" >Continue</btn> <!--closing ng modal fixe-->
-                         </a> 
-                    </div>
-                    </div>
-                    <div class="col 14">
-                       <h4 id = "bedcount">:2 Master Beds</h4>
-                       <h4 id = "productrate">:$20.00</h4>
-                    </div>   
-                  </div>
-             </div>    
-          </div>
-          </div>
-         </div>
+             
       </div><!-- 12th item end -->
-
-      <div class="col 14 itembox">
+</div>      
+<div class="row">
+      <div class="col s3 m3 l3 itembox">
            <div class= "waves-effect waves-block waves-light" data-target="m13">
              <?= $this->Html->image('/units/luxury in soho 2BR/u1.jpg', ['class'=>'products']) ?>
            </div>
            <div class="caption center-align">
-             <h4><center>Luxury in soho(2Br)</center></h4>
+             <h4><center>Luxury in soho</center></h4>
              <h5 class="price light grey-text text-lighten-7"><left>$20.00</left></h5>
              <button data-target="b13" class="waves-effect waves-light btn">Book</button>
-           </div>
+           </div> <!-- Luxury in soho 2br-->
            <div id="m13" class="modal">
                 <div class="modal-content">
                  <h4><center>Condo #1</center></h4>
@@ -1236,63 +731,20 @@ $this->layout = false;
                   <p>The Manor House Inn was awarded one of the Top 10 Best Inns in the US. It is located in the beautiful tree lined West Street Historic District, one of Bar Harbor's most convenient in town locations. The inn is just a short walk to all village shopping, restaurants and ocean front activities. In addition Acadia National Park is just 1 mile away. Manor House Inn consists of the original three story Victorian Mansion, built in 1887
                   </p>
                   <hr/>
-                  <div class="col 14">
-                  <h4 id = "country">Country</h4> 
-                  <h4>Address</h4>
-                  </div>
-                  <div class="col 14">
-                  <h4>:Singapore</h4>
-                  <h5>:Circuit Rd. Building 45, Blk 13 room 32</h5>
-                  </div>
+                <div class="col s3 m3 l3">
+                          <h4 id = "country">Country</h4> 
+                          <h4>Address</h4>
+                    </div>
+                    <div class="col s6">
+                       <h4>:Singapore</h4>
+                       <h5>:Circuit Rd. Building 45, Blk 13 room 32</h5>
+                    </div>
                 </div>
              </div>
-             <div class="modal" id="b13" tabindex="-1" role="dialog" >
-              <div class="modal-dialog">
-                <div class="modal-content">
-             <!-- Modal Header -->
-                  <div class="modal-header">
-                    <h2 id="Productlabel"><center>1(Condo)</center></h2>
-                    <hr/>
-                  </div>  
-            <!-- Modal Body -->
-             <div class="modal-body">
-                    <!-- Product info -->
-                  <div  class = "col 14" id = "details">
-                    <h3>Details:</h3>
-                    <div class="col 14">
-                       <h4>Beds</h4>   
-                       <h4>Nightly Rate</h4>
-                       <hr/>
-                    <h4>Also Available</h4>
-                    <div class="col 14">
-                         <h5>:Jetski </h5>
-                         <h5>:Gym    </h5>
-                         <h5>:CarPark</h5>
-                        <btn type="close" class="btn waves-effect waves-light" 
-                        data-dismiss="modal.close">Cancel</btn> <!--closing ng modal fixe-->
-                       <h5></h5>
-                    </div>
-                    <div class="col 14">
-                         <h5> = $5.00</h5>
-                         <h5> = $0.00</h5>
-                         <h5> = $0.00</h5>
-                         <a href = "#">
-                          <btn class="btn waves-effect waves-light" >Continue</btn> <!--closing ng modal fixe-->
-                         </a> 
-                    </div>
-                    </div>
-                    <div class="col 14">
-                       <h4 id = "bedcount">:2 Master Beds</h4>
-                       <h4 id = "productrate">:$20.00</h4>
-                    </div>   
-                  </div>
-             </div>    
-            </div>
-           </div>
-           </div>
+             
       </div><!-- 13th item end -->
 
-      <div class="col 14 itembox">
+      <div class="col s3 m3 l3 itembox">
           <div class= "waves-effect waves-block waves-light" data-target="m14">
              <?= $this->Html->image('/units/luxury in the sky/u1.jpg', ['class'=>'products']) ?>
           </div>
@@ -1326,63 +778,20 @@ $this->layout = false;
                   <p>The Manor House Inn was awarded one of the Top 10 Best Inns in the US. It is located in the beautiful tree lined West Street Historic District, one of Bar Harbor's most convenient in town locations. The inn is just a short walk to all village shopping, restaurants and ocean front activities. In addition Acadia National Park is just 1 mile away. Manor House Inn consists of the original three story Victorian Mansion, built in 1887
                   </p>
                   <hr/>
-                  <div class="col 14">
-                  <h4 id = "country">Country</h4> 
-                  <h4>Address</h4>
-                  </div>
-                  <div class="col 14">
-                  <h4>:Singapore</h4>
-                  <h5>:Circuit Rd. Building 45, Blk 13 room 32</h5>
-                  </div>
+<div class="col s3 m3 l3">
+                          <h4 id = "country">Country</h4> 
+                          <h4>Address</h4>
+                    </div>
+                    <div class="col s6">
+                       <h4>:Singapore</h4>
+                       <h5>:Circuit Rd. Building 45, Blk 13 room 32</h5>
+                    </div>
                 </div>
              </div>
-             <div class="modal" id="b14" tabindex="-1" role="dialog" >
-              <div class="modal-dialog">
-                <div class="modal-content">
-             <!-- Modal Header -->
-                  <div class="modal-header">
-                    <h2 id="Productlabel"><center>1(Condo)</center></h2>
-                    <hr/>
-                  </div>  
-            <!-- Modal Body -->
-             <div class="modal-body">
-                    <!-- Product info -->
-                  <div  class = "col 14" id = "details">
-                    <h3>Details:</h3>
-                    <div class="col 14">
-                       <h4>Beds</h4>   
-                       <h4>Nightly Rate</h4>
-                       <hr/>
-                    <h4>Also Available</h4>
-                    <div class="col 14">
-                         <h5>:Jetski </h5>
-                         <h5>:Gym    </h5>
-                         <h5>:CarPark</h5>
-                        <btn type="close" class="btn waves-effect waves-light" 
-                        data-dismiss="modal.close">Cancel</btn> <!--closing ng modal fixe-->
-                       <h5></h5>
-                    </div>
-                    <div class="col 14">
-                         <h5> = $5.00</h5>
-                         <h5> = $0.00</h5>
-                         <h5> = $0.00</h5>
-                         <a href = "#">
-                          <btn class="btn waves-effect waves-light" >Continue</btn> <!--closing ng modal fixe-->
-                         </a> 
-                    </div>
-                    </div>
-                    <div class="col 14">
-                       <h4 id = "bedcount">:2 Master Beds</h4>
-                       <h4 id = "productrate">:$20.00</h4>
-                    </div>   
-                  </div>
-             </div>    
-            </div>
-           </div>
-         </div>
+             
       </div><!-- 14th item end -->
 
-      <div class="col 14 itembox">
+      <div class="col s3 m3 l3 itembox">
            <div class= "waves-effect waves-block waves-light" data-target="m15">
              <?= $this->Html->image('/units/makaticity/u1.jpg', ['class'=>'products']) ?>
            </div>
@@ -1407,65 +816,20 @@ $this->layout = false;
                   <p>The location can not be more perfect for your Manila stay. This cozy but spacious Loft is in a high rise condo right across Greenbelt 1. Perfect for 2 but can accomodate up to 4.The best way is to take a cab from the airport. The travel distance is about 5 miles or 8 km. and may take between 30 mins. to an hour to reach the flat, depending on traffic.
                   </p>
                   <hr/>
-                  <div class="col 14">
-                  <h4 id = "country">Country</h4> 
-                  <h4>Address</h4>
-                  </div>
-                  <div class="col 14">
-                  <h4>:Singapore</h4>
-                  <h5>:Circuit Rd. Building 45, Blk 13 room 32</h5>
-                  </div>
+<div class="col s3 m3 l3">
+                          <h4 id = "country">Country</h4> 
+                          <h4>Address</h4>
+                    </div>
+                    <div class="col s6">
+                       <h4>:Singapore</h4>
+                       <h5>:Circuit Rd. Building 45, Blk 13 room 32</h5>
+                    </div>
                 </div>
              </div>
-             <div class="modal" id="b15" tabindex="-1" role="dialog" >
-              <div class="modal-dialog">
-                <div class="modal-content">
-             <!-- Modal Header -->
-                  <div class="modal-header">
-                    <h2 id="Productlabel"><center>1(Condo)</center></h2>
-                    <hr/>
-                  </div>  
-            <!-- Modal Body -->
-             <div class="modal-body">
-                    <!-- Product info -->
-                  <div  class = "col 14" id = "details">
-                    <h3>Details:</h3>
-                    <div class="col 14">
-                       <h4>Beds</h4>   
-                       <h4>Nightly Rate</h4>
-                       <hr/>
-                    <h4>Also Available</h4>
-                    <div class="col 14">
-                         <h5>:Jetski </h5>
-                         <h5>:Gym    </h5>
-                         <h5>:CarPark</h5>
-                        <btn type="close" class="btn waves-effect waves-light" 
-                        data-dismiss="modal.close">Cancel</btn> <!--closing ng modal fixe-->
-                       <h5></h5>
-                    </div>
-                    <div class="col 14">
-                         <h5> = $5.00</h5>
-                         <h5> = $0.00</h5>
-                         <h5> = $0.00</h5>
-                         <a href = "#">
-                          <btn class="btn waves-effect waves-light" >Continue</btn> <!--closing ng modal fixe-->
-                         </a> 
-                    </div>
-                    </div>
-                    <div class="col 14">
-                       <h4 id = "bedcount">:2 Master Beds</h4>
-                       <h4 id = "productrate">:$20.00</h4>
-                    </div>   
-                  </div>
-             </div>    
-                </div>
-            </div>
-           </div>
+             
       </div><!-- 15th item end -->
- </div><!-- 3rd row product row end-->
 
- <div class="row"> <!-- 5 per line-->
-      <div class="col 14 itembox">
+      <div class="col s3 m3 l3 itembox">
           <div class= "waves-effect waves-block waves-light" data-target="m16">
              <?= $this->Html->image('/units/Old havana luxury/u1.jpg', ['class'=>'products']) ?>
           </div>
@@ -1494,68 +858,26 @@ $this->layout = false;
                   <p>The Manor House Inn was awarded one of the Top 10 Best Inns in the US. It is located in the beautiful tree lined West Street Historic District, one of Bar Harbor's most convenient in town locations. The inn is just a short walk to all village shopping, restaurants and ocean front activities. In addition Acadia National Park is just 1 mile away. Manor House Inn consists of the original three story Victorian Mansion, built in 1887
                   </p>
                   <hr/>
-                  <div class="col 14">
-                  <h4 id = "country">Country</h4> 
-                  <h4>Address</h4>
-                  </div>
-                  <div class="col 14">
-                  <h4>:Singapore</h4>
-                  <h5>:Circuit Rd. Building 45, Blk 13 room 32</h5>
-                  </div>
+<div class="col s3 m3 l3">
+                          <h4 id = "country">Country</h4> 
+                          <h4>Address</h4>
+                    </div>
+                    <div class="col s6">
+                       <h4>:Singapore</h4>
+                       <h5>:Circuit Rd. Building 45, Blk 13 room 32</h5>
+                    </div>
                 </div>
              </div>
-             <div class="modal" id="b16" tabindex="-1" role="dialog" >
-              <div class="modal-dialog">
-                <div class="modal-content">
-             <!-- Modal Header -->
-                  <div class="modal-header">
-                    <h2 id="Productlabel"><center>1(Condo)</center></h2>
-                    <hr/>
-                  </div>  
-            <!-- Modal Body -->
-             <div class="modal-body">
-                    <!-- Product info -->
-                  <div  class = "col 14" id = "details">
-                    <h3>Details:</h3>
-                    <div class="col 14">
-                       <h4>Beds</h4>   
-                       <h4>Nightly Rate</h4>
-                       <hr/>
-                    <h4>Also Available</h4>
-                    <div class="col 14">
-                         <h5>:Jetski </h5>
-                         <h5>:Gym    </h5>
-                         <h5>:CarPark</h5>
-                        <btn type="close" class="btn waves-effect waves-light" 
-                        data-dismiss="modal.close">Cancel</btn> <!--closing ng modal fixe-->
-                       <h5></h5>
-                    </div>
-                    <div class="col 14">
-                         <h5> = $5.00</h5>
-                         <h5> = $0.00</h5>
-                         <h5> = $0.00</h5>
-                         <a href = "#">
-                          <btn class="btn waves-effect waves-light" >Continue</btn> <!--closing ng modal fixe-->
-                         </a> 
-                    </div>
-                    </div>
-                    <div class="col 14">
-                       <h4 id = "bedcount">:2 Master Beds</h4>
-                       <h4 id = "productrate">:$20.00</h4>
-                    </div>   
-                  </div>
-             </div>    
-               </div>
-             </div>
-           </div>
+             
       </div><!-- 16th item end -->
-
-      <div class="col 14 itembox">
+</div>      
+<div class="row">
+      <div class="col s3 m3 l3 itembox">
           <div class= "waves-effect waves-block waves-light" data-target="m17">
              <?= $this->Html->image('/units/Old havana luxury 2/u1.jpg', ['class'=>'products']) ?>
           </div>
           <div class="caption center-align">
-             <h4><center>Old havana luxury 2</center></h4>
+             <h4><center>Old havana luxury</center></h4>
              <h5 class="price light grey-text text-lighten-7"><left>$20.00</left></h5>
              <button data-target="b17" class="waves-effect waves-light btn">Book</button>
           </div>
@@ -1580,63 +902,20 @@ $this->layout = false;
                   <p>The Manor House Inn was awarded one of the Top 10 Best Inns in the US. It is located in the beautiful tree lined West Street Historic District, one of Bar Harbor's most convenient in town locations. The inn is just a short walk to all village shopping, restaurants and ocean front activities. In addition Acadia National Park is just 1 mile away. Manor House Inn consists of the original three story Victorian Mansion, built in 1887
                   </p>
                   <hr/>
-                  <div class="col 14">
-                  <h4 id = "country">Country</h4> 
-                  <h4>Address</h4>
-                  </div>
-                  <div class="col 14">
-                  <h4>:Singapore</h4>
-                  <h5>:Circuit Rd. Building 45, Blk 13 room 32</h5>
-                  </div>
+<div class="col s3 m3 l3">
+                          <h4 id = "country">Country</h4> 
+                          <h4>Address</h4>
+                    </div>
+                    <div class="col s6">
+                       <h4>:Singapore</h4>
+                       <h5>:Circuit Rd. Building 45, Blk 13 room 32</h5>
+                    </div>
                 </div>
              </div>
-             <div class="modal" id="b17" tabindex="-1" role="dialog" >
-              <div class="modal-dialog">
-                <div class="modal-content">
-             <!-- Modal Header -->
-                  <div class="modal-header">
-                    <h2 id="Productlabel"><center>1(Condo)</center></h2>
-                    <hr/>
-                  </div>  
-            <!-- Modal Body -->
-             <div class="modal-body">
-                    <!-- Product info -->
-                  <div  class = "col 14" id = "details">
-                    <h3>Details:</h3>
-                    <div class="col 14">
-                       <h4>Beds</h4>   
-                       <h4>Nightly Rate</h4>
-                       <hr/>
-                    <h4>Also Available</h4>
-                    <div class="col 14">
-                         <h5>:Jetski </h5>
-                         <h5>:Gym    </h5>
-                         <h5>:CarPark</h5>
-                        <btn type="close" class="btn waves-effect waves-light" 
-                        data-dismiss="modal.close">Cancel</btn> <!--closing ng modal fixe-->
-                       <h5></h5>
-                    </div>
-                    <div class="col 14">
-                         <h5> = $5.00</h5>
-                         <h5> = $0.00</h5>
-                         <h5> = $0.00</h5>
-                         <a href = "#">
-                          <btn class="btn waves-effect waves-light" >Continue</btn> <!--closing ng modal fixe-->
-                         </a> 
-                    </div>
-                    </div>
-                    <div class="col 14">
-                       <h4 id = "bedcount">:2 Master Beds</h4>
-                       <h4 id = "productrate">:$20.00</h4>
-                    </div>   
-                  </div>
-             </div>    
-                </div>
-             </div>
-         </div>
+             
       </div><!-- 17th item end -->
 
-      <div class="col 14 itembox">
+      <div class="col s3 m3 l3 itembox">
            <div class= "waves-effect waves-block waves-light" data-target="m18">
              <?= $this->Html->image('/units/penthouse lux/u1.jpg', ['class'=>'products']) ?>
            </div>
@@ -1670,68 +949,25 @@ $this->layout = false;
                   <p>The Manor House Inn was awarded one of the Top 10 Best Inns in the US. It is located in the beautiful tree lined West Street Historic District, one of Bar Harbor's most convenient in town locations. The inn is just a short walk to all village shopping, restaurants and ocean front activities. In addition Acadia National Park is just 1 mile away. Manor House Inn consists of the original three story Victorian Mansion, built in 1887
                   </p>
                   <hr/>
-                  <div class="col 14">
-                  <h4 id = "country">Country</h4> 
-                  <h4>Address</h4>
-                  </div>
-                  <div class="col 14">
-                  <h4>:Singapore</h4>
-                  <h5>:Circuit Rd. Building 45, Blk 13 room 32</h5>
-                  </div>
+<div class="col s3 m3 l3">
+                          <h4 id = "country">Country</h4> 
+                          <h4>Address</h4>
+                    </div>
+                    <div class="col s6">
+                       <h4>:Singapore</h4>
+                       <h5>:Circuit Rd. Building 45, Blk 13 room 32</h5>
+                    </div>
                 </div>
              </div>
-             <div class="modal" id="b18" tabindex="-1" role="dialog" >
-              <div class="modal-dialog">
-                <div class="modal-content">
-             <!-- Modal Header -->
-                  <div class="modal-header">
-                    <h2 id="Productlabel"><center>1(Condo)</center></h2>
-                    <hr/>
-                  </div>  
-            <!-- Modal Body -->
-             <div class="modal-body">
-                    <!-- Product info -->
-                  <div  class = "col 14" id = "details">
-                    <h3>Details:</h3>
-                    <div class="col 14">
-                       <h4>Beds</h4>   
-                       <h4>Nightly Rate</h4>
-                       <hr/>
-                    <h4>Also Available</h4>
-                    <div class="col 14">
-                         <h5>:Jetski </h5>
-                         <h5>:Gym    </h5>
-                         <h5>:CarPark</h5>
-                        <btn type="close" class="btn waves-effect waves-light" 
-                        data-dismiss="modal.close">Cancel</btn> <!--closing ng modal fixe-->
-                       <h5></h5>
-                    </div>
-                    <div class="col 14">
-                         <h5> = $5.00</h5>
-                         <h5> = $0.00</h5>
-                         <h5> = $0.00</h5>
-                         <a href = "#">
-                          <btn class="btn waves-effect waves-light" >Continue</btn> <!--closing ng modal fixe-->
-                         </a> 
-                    </div>
-                    </div>
-                    <div class="col 14">
-                       <h4 id = "bedcount">:2 Master Beds</h4>
-                       <h4 id = "productrate">:$20.00</h4>
-                    </div>   
-                  </div>
-             </div>    
-             </div>
-             </div>
-            </div>
+             
       </div><!-- 18th item end -->
 
-      <div class="col 14 itembox">
+      <div class="col s3 m3 l3 itembox">
             <div class= "waves-effect waves-block waves-light" data-target="m19">
              <?= $this->Html->image('/units/penthouse lux 2/u1.jpg', ['class'=>'products']) ?>
             </div>
             <div class="caption center-align">
-             <h4><center>Penthouse Luxury 2</center></h4>
+             <h4><center>Penthouse Luxury</center></h4>
              <h5 class="price light grey-text text-lighten-7"><left>$20.00</left></h5>
              <button data-target="b19" class="waves-effect waves-light btn">Book</button>
             </div>
@@ -1760,63 +996,20 @@ $this->layout = false;
                   <p>The Manor House Inn was awarded one of the Top 10 Best Inns in the US. It is located in the beautiful tree lined West Street Historic District, one of Bar Harbor's most convenient in town locations. The inn is just a short walk to all village shopping, restaurants and ocean front activities. In addition Acadia National Park is just 1 mile away. Manor House Inn consists of the original three story Victorian Mansion, built in 1887
                   </p>
                   <hr/>
-                  <div class="col 14">
-                  <h4 id = "country">Country</h4> 
-                  <h4>Address</h4>
-                  </div>
-                  <div class="col 14">
-                  <h4>:Singapore</h4>
-                  <h5>:Circuit Rd. Building 45, Blk 13 room 32</h5>
-                  </div>
+<div class="col s3 m3 l3">
+                          <h4 id = "country">Country</h4> 
+                          <h4>Address</h4>
+                    </div>
+                    <div class="col s6">
+                       <h4>:Singapore</h4>
+                       <h5>:Circuit Rd. Building 45, Blk 13 room 32</h5>
+                    </div>
                 </div>
              </div>
-             <div class="modal" id="b19" tabindex="-1" role="dialog" >
-              <div class="modal-dialog">
-                <div class="modal-content">
-             <!-- Modal Header -->
-                  <div class="modal-header">
-                    <h2 id="Productlabel"><center>1(Condo)</center></h2>
-                    <hr/>
-                  </div>  
-            <!-- Modal Body -->
-             <div class="modal-body">
-                    <!-- Product info -->
-                  <div  class = "col 14" id = "details">
-                    <h3>Details:</h3>
-                    <div class="col 14">
-                       <h4>Beds</h4>   
-                       <h4>Nightly Rate</h4>
-                       <hr/>
-                    <h4>Also Available</h4>
-                    <div class="col 14">
-                         <h5>:Jetski </h5>
-                         <h5>:Gym    </h5>
-                         <h5>:CarPark</h5>
-                        <btn type="close" class="btn waves-effect waves-light" 
-                        data-dismiss="modal.close">Cancel</btn> <!--closing ng modal fixe-->
-                       <h5></h5>
-                    </div>
-                    <div class="col 14">
-                         <h5> = $5.00</h5>
-                         <h5> = $0.00</h5>
-                         <h5> = $0.00</h5>
-                         <a href = "#">
-                          <btn class="btn waves-effect waves-light" >Continue</btn> <!--closing ng modal fixe-->
-                         </a> 
-                    </div>
-                    </div>
-                    <div class="col 14">
-                       <h4 id = "bedcount">:2 Master Beds</h4>
-                       <h4 id = "productrate">:$20.00</h4>
-                    </div>   
-                  </div>
-             </div>    
-             </div>
-            </div>
-            </div>
+             
       </div><!-- 19th item end -->
 
-      <div class="col 14 itembox">
+      <div class="col s3 m3 l3 itembox">
             <div class= "waves-effect waves-block waves-light" data-target="m20">
               <?= $this->Html->image('/units/waterside luxury/u1.jpg', ['class'=>'products']) ?>
             </div>
@@ -1850,60 +1043,17 @@ $this->layout = false;
                   <p>The Manor House Inn was awarded one of the Top 10 Best Inns in the US. It is located in the beautiful tree lined West Street Historic District, one of Bar Harbor's most convenient in town locations. The inn is just a short walk to all village shopping, restaurants and ocean front activities. In addition Acadia National Park is just 1 mile away. Manor House Inn consists of the original three story Victorian Mansion, built in 1887
                   </p>
                   <hr/>
-                  <div class="col 14">
-                  <h4 id = "country">Country</h4> 
-                  <h4>Address</h4>
-                  </div>
-                  <div class="col 14">
-                  <h4>:Singapore</h4>
-                  <h5>:Circuit Rd. Building 45, Blk 13 room 32</h5>
-                  </div>
+<div class="col s3 m3 l3">
+                          <h4 id = "country">Country</h4> 
+                          <h4>Address</h4>
+                    </div>
+                    <div class="col s6">
+                       <h4>:Singapore</h4>
+                       <h5>:Circuit Rd. Building 45, Blk 13 room 32</h5>
+                    </div>
                 </div>
              </div>
-             <div class="modal" id="b20" tabindex="-1" role="dialog" >
-              <div class="modal-dialog">
-                <div class="modal-content">
-             <!-- Modal Header -->
-                  <div class="modal-header">
-                    <h2 id="Productlabel"><center>1(Condo)</center></h2>
-                    <hr/>
-                  </div>  
-            <!-- Modal Body -->
-             <div class="modal-body">
-                    <!-- Product info -->
-                  <div  class = "col 14" id = "details">
-                    <h3>Details:</h3>
-                    <div class="col 14">
-                       <h4>Beds</h4>   
-                       <h4>Nightly Rate</h4>
-                       <hr/>
-                    <h4>Also Available</h4>
-                    <div class="col 14">
-                         <h5>:Jetski </h5>
-                         <h5>:Gym    </h5>
-                         <h5>:CarPark</h5>
-                        <btn type="close" class="btn waves-effect waves-light" 
-                        data-dismiss="modal.close">Cancel</btn> <!--closing ng modal fixe-->
-                       <h5></h5>
-                    </div>
-                    <div class="col 14">
-                         <h5> = $5.00</h5>
-                         <h5> = $0.00</h5>
-                         <h5> = $0.00</h5>
-                         <a href = "#">
-                          <btn class="btn waves-effect waves-light" >Continue</btn> <!--closing ng modal fixe-->
-                         </a> 
-                    </div>
-                    </div>
-                    <div class="col 14">
-                       <h4 id = "bedcount">:2 Master Beds</h4>
-                       <h4 id = "productrate">:$20.00</h4>
-                    </div>   
-                  </div>
-             </div>    
-                  </div>
-            </div>
-           </div>
+             
       </div><!-- 20th item end -->
  </div><!-- 4th row product row end-->
 </div>
@@ -1913,10 +1063,11 @@ $this->layout = false;
 
 
 
+
   
     
-<div class = "col 14 "> 
-      <div  class= "waves-effect waves-block waves-light section scrollspy">
+ 
+      <div  class= "waves-effect waves-block waves-light section scrollspy col s12 m12 l12 container-fluid">
                <?= $this->Html->image('6.jpg', ['class'=>'bgimg']) ?> <!-- random image -->
            <div  id="services" class="middle caption center-align text-lighten-8 section scrollspy">
               <h4><center> Services </center></h4>
@@ -1924,8 +1075,8 @@ $this->layout = false;
               <hr>
               <p id="cdtime" style="font-size:30px" ></p>
             </div>
-      </div>
-</div> 
+      </div>    
+
 
      
   <hr/>
@@ -1941,7 +1092,7 @@ $this->layout = false;
 <footer class="page-footer">
   <div class="container">
     <div class="row">
-      <div class="col l6 s12">
+      <div class="col s12">
         <h5 class="white-text">Miami Luxry Condos</h5>
         <h7><a href = "https://twitter.com/mlcstays" target="_blank">@mlcstays</a></h7>
         <p class="grey-text text-lighten-4">We provide 24/7 bookings and assistance for those who wanted a Miami Luxury vacation. Call us at +1 (800) 804-2316 extension 102 or visit the link below</p>
