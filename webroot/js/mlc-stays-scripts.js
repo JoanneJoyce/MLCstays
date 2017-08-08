@@ -29,11 +29,8 @@ var navbarHeight = $('#navbar').outerHeight();
 
 $(window).scroll(function(event){
     var st = $(this).scrollTop();
-    
-    
     // If they scrolled down and are past the navbar, add class .MagicMenu-up.
     // This is necessary so you never see what is "behind" the navbar.
-
     if (lastScrollTop < st){
         // Scroll Down
         $('#navbar').fadeOut(500);
@@ -55,7 +52,6 @@ $(window).scroll(function(event){
                 'background-color': '#1d194c',//#1b2030
             });
         }
-
     }
     lastScrollTop = st;
 });
